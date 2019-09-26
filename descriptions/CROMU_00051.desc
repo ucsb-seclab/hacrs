@@ -1,0 +1,15 @@
+## Description
+
+This CB implements a basic shell and command line environment similar to busybox.  It supports a single directory file system, the ability to create, delete and change between users, change user passwords, create files, and display their contents.
+
+ShortDescription: A basic linux shell and command line environment
+
+### Feature List
+
+The CB provides these features:
+
+- Basic shell with command history accessible through up/down arrows
+- Basic filesystem (single directory, list files, dump file contents)
+- User management (change user, change password, create new user, delete a user)
+- exit
+

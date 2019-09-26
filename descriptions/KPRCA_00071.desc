@@ -1,0 +1,15 @@
+## Description
+
+A gaming system that pits a user against a basic AI
+
+### Feature List
+
+After a user registers, there are 3 games that can be played
+Games:
+    1. Hammer, Sheet, Sheers
+    2. Guess my number
+    3. Three in a row
+    4. Give up
+
+The games are inspired by class children's games.
+

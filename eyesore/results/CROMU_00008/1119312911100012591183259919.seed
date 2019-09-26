@@ -1,0 +1,16 @@
+firstname = "Alex" AND lastname = "Hanks"
+lastname = "Hanks" AND firstname = "Tom"
+lastname = "Smith"
+lastname = "SMITH"
+LASTNAME = "SMITH"
+Lastname = "Smith"
+lastname = "smith"
+lastname = "Will"
+lastname = "Will" AND firstname = "Bob"
+lastname == "Will"
+lastname == "Will" AND firstname == "Bob"
+lastname == "Cruise" AND firstname == "Tom"
+lastname == "Chen" and firstname == "Ted"
+Help needed
+functions
+Please provide some assistance

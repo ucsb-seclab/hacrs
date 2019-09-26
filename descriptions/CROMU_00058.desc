@@ -1,0 +1,8 @@
+## Description
+
+This is an emulator of an instruction set inspired by the TI ARM PRU. The PRU is featured on the BeagleBone black, and was used to provide high performance I/O on a board at the DEF CON 2015 Capture The Flag.
+
+### Feature List
+
+This service features an ALU and pieces of a branch unit. A user can do a variety of arithmetic operations on 32 registers, and conditional branching as well.
+

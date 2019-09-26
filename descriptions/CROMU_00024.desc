@@ -1,0 +1,8 @@
+## Description
+
+The program is an application for the storage and quick retrieval of string data.  Internally, a token is created for each string and the token is used as the key for a Binary Search Tree where the data is stored.  This allows for very quick retrieval of strings, provided that data is not stored in such a sequence that the tree degenerates into a linked list.  Most BST's do not allow for duplicate keys, but this implimentation does, storing the data common to one key in a linked list that must be sequentially searched.  However, key collisions should be rare and therefore sequential searches very short.  In addition, identical string data is not allowed, further limiting the possibility of key overlap.  
+
+### Feature List
+
+The program allows for strings to be a)dded, d)eleted, f)ound, the entire tree to be w)alked, and tree s)tatistics to be printed. Strings are added by the command a/<string to be added> for example.  Strings to be added must be at least 10 characters in width.
+

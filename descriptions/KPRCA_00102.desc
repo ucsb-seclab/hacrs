@@ -1,0 +1,25 @@
+## Description
+
+A music manager for all your music files
+
+### Feature List
+
+
+The service supports addings songs to a master library.
+That library can organize subsets of songs into 'playlists'
+Operations:
+    -Add Songs 
+    -Delete Songs
+    -Select a Playlist
+    -Add Songs To Playlist(s)
+    -Delete SongFrom Playlist(s)
+    -List Song
+    -Sort Library or Playlist(s)
+    -Remix Music Track
+     -Create Playlist
+     -Delete Playlist
+     -List Playlists
+    
+Songs need to conform to a specific Music File Format and are verified when being read in. Each file is proceeded by a
+tag that contains information about the music track (who made it, what it's called, etc etc).
+

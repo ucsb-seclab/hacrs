@@ -1,0 +1,13 @@
+## Description
+
+This is a challenge modelled after one of the author's favorite DEF CON Capture The Flag challenges - perudo, from the Kenshoto group.
+
+### Feature List
+
+This service is a simple gambling parlor for the user. Upon connecting, the user is asked for a name and then given a selection of four games to play. The name is used to seed a PRNG. The games are:
+
+* Coin Flip
+* Hangman
+* Dice Roll
+* War
+

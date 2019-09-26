@@ -1,0 +1,14 @@
+3
+test
+run
+test = foo echo $test 
+echo
+foo
+$test
+if test = foo run 
+asdfe
+[A[B[Cfile[B[C[D[A[C
+1
+[Dfile
+2
+[D

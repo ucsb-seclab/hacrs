@@ -1,0 +1,8 @@
+## Description
+
+This service implements a bulletin board system over a FSK modem. Users can create new threads, reply to threads, and read threads and replies. This challenge binary and its vulnerability are based on a real-world program and one of its vulnerabilities.
+
+### Feature List
+
+This bulletin board system is compatible with standard telephone encodings and supports connection speeds of 400 baud. The modem implements error correcting codes with a hamming distance of 9 bits and a checksum with a hamming distance of 4 bits, over a fragment containing 72 bits of usable data. Multiple fragments are then concatenated to form packets with a maximum payload of 1024 bytes.
+

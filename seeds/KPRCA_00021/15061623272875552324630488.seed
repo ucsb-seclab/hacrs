@@ -1,0 +1,18 @@
+2
+1
+2
+1 dnl
+dnl
+-define
+struct
+value
+id
+1 print value
+127.0.0.1
+ping
+test
+>
+> db
+> test
+> print
+db find

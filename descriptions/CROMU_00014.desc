@@ -1,0 +1,9 @@
+## Description
+
+This challenge binary implements an application for logging a single SCUBA diver's dive activity.  
+
+### Feature List
+
+Dives can be manually entered, edited, removed, and displayed.  In addition, the application also has the ability to download log data from a simulated dive computer.  Statistics are also calculated over the entire log of dives and displayed.
+
+

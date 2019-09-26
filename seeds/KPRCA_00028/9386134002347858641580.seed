@@ -1,0 +1,8 @@
+(quote (quote >)
+e
+c
+a
+k
+e
+> quote (e)
+> (quote e)

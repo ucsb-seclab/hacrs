@@ -1,0 +1,13 @@
+## Description
+This CB implements a network queuing simulator.  Based on inputs from the user,
+the program simulates the transmission of network traffic through an interface 
+tracking statistics like total packets sent, dropped packets, average latency, etc.
+
+### Feature List
+Users are able configure these items:
+	- Interface bit-rate
+	- Packet generator
+	- Number of queues
+	- Types, depths, priorities, and weights of those queues
+	- Length of the simulation
+

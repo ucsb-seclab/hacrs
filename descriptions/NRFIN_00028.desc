@@ -1,0 +1,14 @@
+## Description
+
+SafeTechs, the company behind the industry-leading SOMECHECKS integrity-assurance and remote management technology, is proud to announce the most recent addition to their outstanding offerings: SIGSEGV (Secure ICS Governance via Signed Executable Group Validation)
+SIGSEGV allows for you to manage your ICS infrastructure in a secure, trusted manner, without sacrificing any capability.
+
+### Feature List
+
+SIGSEGV is a groundbreaking technology that allows companies to easily and securely deploy custom management code across their infrastructure.
+Gone are the days where you need to have support accounts with static passwords and backdoor ports simply to maintain support access to networks. 
+No more do you need to struggle with slow SSH configurations and tricky Telnet sessions.
+SIGSEGV is able to do this securely by utilizing a patent-pending verification algorithm and unique executable format to ensure compatibility across a wide range of ICSs, and with a minimal amount of overhead.
+As such, it is extremely easy to integrate into just about any system you can imagine, and provides extremely flexible management capabilities, limited only by what code you decide is allowed to run.
+
+

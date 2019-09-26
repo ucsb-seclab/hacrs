@@ -1,0 +1,19 @@
+## Description
+
+I'm so UTF-8, you so UTF-late. This is a network-enabled file server, which
+keeps all user files in memory for blazing-quick access. The API exposes a
+public dropbox folder, while preventing access to the protected admin area. The
+filesystem is UTF-8 aware, allowing arbitrary unicode filenames of a fixed
+length.
+
+Commands take the form of a 4-byte command identifier, followed by optional
+arguments. Commands may produce output, but will always end in a 4-byte success
+code, 0 on success or -1 on failure.
+
+### Feature List
+
+The following features are available:
+ - Read file, accepts a filename and returns the contents of that file
+ - Write file, accepts a filename and a size, writes the contents to a file
+ - List files, lists all files in the dropbox folder
+

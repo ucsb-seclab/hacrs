@@ -1,0 +1,9 @@
+2+2
+a1
+a0=1
+B0=1
+B0=2
+C0=B0-A0
+C0
+PRINT C0
+CLEAR A0

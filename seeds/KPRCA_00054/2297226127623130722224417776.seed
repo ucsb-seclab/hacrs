@@ -1,0 +1,9 @@
+list
+open D O
+open D O .
+open .
+create 1
+open 1
+close 1
+help
+open DO.

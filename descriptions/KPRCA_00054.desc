@@ -1,0 +1,49 @@
+## Description
+
+Simple shell-like file management system.
+
+### Feature List
+
+
+```
+list [file ..]
+ - Lists files and directories.
+ 
+create <filename>
+ - Creates a file.
+ 
+open <filename>
+ - Opens a file.
+ 
+close <fileno>
+ - Closes an open file.
+ 
+close_all
+ - Closes all open files.
+ 
+read <fileno> [pos] [len]
+ - Reads a file.
+ 
+modify <fileno> [pos]
+ - Modifies a file.
+ 
+delete <filename>
+ - Deletes a file.
+ 
+mkdir <dirname>
+ - Creates a directory.
+ 
+rmdir <dirname>
+ - Deletes a directory.
+ 
+chdir <dirname>
+ - Changes the working directory.
+ 
+quit
+ - Quits the program.
+ 
+help [command]
+ - Displays the help message.
+ ```
+ 
+

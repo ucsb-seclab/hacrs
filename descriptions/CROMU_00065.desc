@@ -1,0 +1,8 @@
+## Description
+
+This program is a game of chance called WhackJack.  It might or might not bear a similarity to another game with a rhyming name.  It allows up to 8 players to play, with players being human or computer simulated according to various play algorithms.
+
+### Feature List
+
+The service simulates a card game where the goal is to get a higher score than the dealer without going over 21.  Up to 8 players can play with the option of making some of those players computer simulated.  Five different algorithms are included that embody various schools of thought on how to play the game.  The game also includes a training mode whereby human players can get play hints from one of the algorithms. 
+

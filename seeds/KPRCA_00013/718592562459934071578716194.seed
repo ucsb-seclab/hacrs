@@ -1,0 +1,16 @@
+AVG
+A0
+A0=1
+A1=2
+A0=this is a string
+A1==SQRT(9)
+A2=A1=97
+clear
+A3=SIN(A2/A1)
+clear A1
+AVG A1=A3
+AVG A1+A2
+AVGA1[D[D
+=
+A1+A2
+EXIT

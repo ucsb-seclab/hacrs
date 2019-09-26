@@ -1,0 +1,18 @@
+## Description
+
+This application allows a user to sign up for university classes. It will check for scheduling conflicts
+as well as enforce university rules, such as limiting the number of credits taken per semester,
+limiting the number of in major classes, and forcing a student to take classes with 3 or more credits
+unless it is an in major class.
+
+### Feature List
+The application lets a student add classes for the semester. In doing so the student can search for classes
+by its Course number, Course Id or professor. Once a student finds a class or classes, he or she can
+add up to 7 classes to his or her schedule.
+
+1 - Search Classes
+2 - Add Class
+3 - Remove Class
+4 - Print Schedule
+5 - Exit
+

@@ -1,0 +1,8 @@
+## Description
+
+This is a basic message application with the ability to create new users, log in to existing users and send messages to others.
+
+### Feature List
+
+A user can create new users and subsequently log in to their new account. From here they can send a message to a user, read a single message, list all of their messages, delete a message, log out, or exit the program. Once back at the log in screen they can create additional users, log in, or exit the program. Any new messages are automatically displayed to the user.
+

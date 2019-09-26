@@ -1,0 +1,24 @@
+help
+echo
+mkfolder aa
+cd aa
+time
+fsinfo
+delete
+fsinfo
+? 
+? help listing
+echo hello
+
+
+show bah
+show c:
+mkfolder aa
+dir
+dir aa
+show ss
+show aa
+echo hgfghhhfg ss.bat
+show aa
+echo asdasdadada>xx.txt
+dump xx.txt

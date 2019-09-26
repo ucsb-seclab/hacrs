@@ -1,0 +1,8 @@
+## Description
+This service records dive events and accepts a list of data points for a given dive event.
+
+### Feature List
+It validates date and time values, performs epoch to ascii time and date conversion,
+and calculates metrics for a given dive as well as all dives.   
+
+

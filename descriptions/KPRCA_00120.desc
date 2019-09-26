@@ -1,0 +1,18 @@
+## Description
+
+A ticket tracking system so you customers can complain and you can continue to
+ignore them while their tickets appear to be worked on.
+
+### Feature List
+
+This service provides a series of commands for ticket issuers and ticker takers.
+* Hire support person
+* Fire support person
+* Add ticket
+* View tickets by status
+* Cancel Ticket
+* Check status of ticket
+* List support persons status
+* List free support persons
+* Quit
+

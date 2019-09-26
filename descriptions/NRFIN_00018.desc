@@ -1,0 +1,17 @@
+## Description
+
+Too lazy to compute your own matrices? Let our workers do it for you. They'll process your messages in their super-speed pipeline, while you sit back and relax. 
+
+
+### Feature List
+
+The first message you send provides the configuration of the pipeline. From there each subsequent message uses the same pipele, for super-speed operation. Since the pipeline only moves as fast as you submit messages, always make sure to clear the pipeline when you are done. 
+
+Message structure is the following
+{Configuration, Array length, Array width, X Plotter, Y Plotter}
+
+"Configuration" will be used to configure the pipeline
+"Array length" and "Array width" configure the dimensions of the matrix.
+"X Plotter" and "Y Plotter" drive the computation of the matrix.
+
+

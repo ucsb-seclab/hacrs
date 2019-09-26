@@ -1,0 +1,12 @@
+## Description
+
+This binary accepts tuning parameters for a homemade PRNG, validates their
+randomness with a Monte Carlo method to calculate pi, and uses the PRNG to
+size a stack buffer for a relatively simple buffer overflow.
+
+### Feature List
+
+* Floating-point PRNG
+* Monte Carlo simulation calculating pi
+* Dynamically-sized stack buffer
+

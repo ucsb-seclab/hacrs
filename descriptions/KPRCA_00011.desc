@@ -1,0 +1,24 @@
+## Description
+
+This is a simple movie rental service where the user can list available movies in the inventory and rent the ones that are not rented already. The user is also able to return the movie. There is also an interface for privileged user (admin) when successfully logged in. This interface allows the admin to add, remove, or update movies in the inventory.
+
+### Feature List
+
+This service supports the following features:
+
+In normal mode,
+
+  1. **List movies**: lists a full movie list as well as a rental list (i.e. the movies that are currently rented).
+  2. **Rent movie**: allows the user to rent a movie from the list (movies that are not currently rented can be rented).
+  3. **Return movie**: allows the user to return the movie that was rented.
+  4. **Admin mode (login)**: verifies username and password to provide privileged menus.
+  5. **Exit**: quits the program.
+
+In admin mode,
+
+  1. **Add movie**: adds a new movie to the list.
+  2. **Remove movie**: removes a movie from the list.
+  3. **Update movie**: updates information about a movie.
+  4. **Quit admin mode**: quits the admin mode and goes back to the normal mode.
+
+

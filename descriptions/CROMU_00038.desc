@@ -1,0 +1,8 @@
+## Description
+
+The program is an utility that parses a metadata format used with various types of media.  The utility simply displays the contents of the metadata to STDOUT.
+
+### Feature List
+
+The utility dynamically parses the metadata format as there are no mandatory data tags and additional tags can be added as needed.  If the utility does not understand a particular tag type, the raw data for the tag is displayed.  
+

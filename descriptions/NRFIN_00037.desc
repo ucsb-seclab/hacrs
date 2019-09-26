@@ -1,0 +1,27 @@
+## Description
+
+Do the mice have enough cotton swabs to cross the wastebasket chasm and reach the cheese on the counter?  They're not sure; this sounds like a job for arithmetic!
+
+One complicating factor: they need to do this math on their laptop, phones, watch and car.  Because why not?
+
+What better way to achieve cross-platform compatibility than to write arithmetic expressions in machine-agnostic bytecode?  There's probably a bunch of better ways, but this is what they settled on.
+
+You're the cat and you must exploit the mice's cross-platform arithmetic machine. Good luck.
+
+### Feature List
+
+Interfacing with the CB is very simple.  CRSs provide bytecode for verification and - if it passes - execution.  
+
+The bytecode executes on a single register (ACC) + memory virtual machine. Available operations are the 4 standard arithmetic operations (add, subtract, multiply and divide) plus a special OUT operation that writes whatever is currently in ACC into the output parameter for return back to the CRS.
+
+Flags in the opcode dictate where the result of an operation is to be stored (ACC or a memory location), what constitutes the operands (is ACC an operand?) and how the operands are to be interpreted (are they immediate values or memory references?).  More details provided in service.h
+
+Here's a summary:
+#) CB: allocate() memory for bytecode and scratch space (temporary storage)
+#) CRS -> CB: bytecode instructions
+#) CB: validate bytecode 
+#) CB: execute bytecode
+#) CB -> CRS: output
+	- Output is the contents of a 32bit output register, populated with the 
+	contents of ACC each time OPCODE_OUT is executed.
+

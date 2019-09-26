@@ -1,0 +1,23 @@
+## Description
+
+A file system image parser. 
+
+### Feature List
+
+Mount Filemore allows a user to send a CGFS compliant image for mounting and editing. 
+The full list of commands are:
+    -Mount Filesystem
+    -List File/Directory
+    -Recursively List Files/Directories
+    -Preview File
+    -Read From File
+    -Write To File
+    -Update File Size
+    -Add File
+    -Add Directory
+    -Delete File
+    -Delete Directory
+    -View Mounted Filesystem Metadata
+    -Unmount Filesystem
+
+

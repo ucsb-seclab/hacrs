@@ -1,0 +1,8 @@
+## Description
+
+This service is an implementation of Divelogger using C++ instead of C. This service accepts diver information and has the ability to log dives into a database.
+
+### Feature List
+
+The service features the ability to enter diver specific information: Phone Number, First Name, Last Name, etc. It also has the ability to enter individual dive information such as location, date, average and max depth, dive duration, etc. The user can insert, remove, add, or download dive data into the database. During download the service accepts binary timestamps and depth points and stores those in the dive log.
+

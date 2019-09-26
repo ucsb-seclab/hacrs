@@ -1,0 +1,4 @@
+## Description
+
+This service implements a simple character counter. It takes in a stream of input, echos it, and then outputs the number of lower case letters, upper case letter, numbers, spaces (incldues tabs), special characters (other printable characters) and finally others (non-printable characters). 
+

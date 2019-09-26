@@ -1,0 +1,10 @@
+## Description
+
+An options exchange simulator that matches sell orders to buy attempts. 
+
+### Feature List
+
+This service supports posting sell orders for options holdings and account controls. All options order requests must be checksummed with a super-secret formula and XORd with a super-secret account key. A client can perform: buy, sell, and quotation options. His holdings are automatically managed by the service.
+
+The binary also performs book keeping functions to make sure clients don't oversell their holdings or balances.
+

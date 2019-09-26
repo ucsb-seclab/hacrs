@@ -1,0 +1,60 @@
+?
+delete a
+delete
+create a
+delete a
+create a
+modify a
+modify a 2
+mkdir a
+mkdir b
+rmdir b
+mkdir a
+mkdir w
+mkdir s
+chdir w
+read a
+read w
+create l
+read l
+read l 3
+chdir l
+chdir w
+chdir s
+help
+close a
+close s
+close w
+list
+open dir
+open c
+open o
+open l
+close l
+close -
+close 0
+l
+open l
+open 0
+chdir w
+help
+?
+create w
+create 4
+create ?
+open ?
+open 3
+open 4
+open w
+close 4
+close 2
+close 1
+close 3
+mkdir 3
+mkdir5
+mkdir 54
+mkdir 6
+mkdir 67
+rmdir 4
+rmdir 6
+quit

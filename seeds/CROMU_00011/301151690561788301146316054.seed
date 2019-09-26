@@ -1,0 +1,36 @@
+ps mouse
+.ps
+.h
+.j
+rr
+setx=|"mouse",set1
+setx = |"mouse", set1 |
+sety = |"cat" , "dog" |
+setz = setx^sety
+setz @ setx
+.p
+.ps
+.ps setz
+setx = setz-sety
+setp = seta~setx
+setp = setz~setx
+seto = |sety, "gerbil"|
+seti= setz+seto
+.p
+sett = seto-seti
+sets = seti ^|"gerbil"|
+.ps sets
+setz = sets + sety
+setp = sety-sets
+sets @ setp
+.h
+.p
+setx = setz+sety+|"hamster"|
+setx = setz+|"rat"|
+sett=|"badger"|
+sett = setpz-setp
+setz = sett-setp
+.ps sett+setp
+setb = sett~|"rat","bob"|
+.m
+.l

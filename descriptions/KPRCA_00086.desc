@@ -1,0 +1,17 @@
+## Description
+
+This service creates an interface in which someone can play a game where you drive a character around to collect all the dots.
+You cannot drive into the side walls, or the middle walls (shown as "+"), and you only have a limited number of moves in which
+to collect all of the dots. If you are successful in collecting all the dots before you run out of moves, then you are able 
+to send an image to the service. Edge detection is then performed on this image and another image is returned containing
+only the edges of the image which was sent in. 
+
+To move the initial game, the program expects the following charachters, followed by new lines. 
+w = move up, d = move right, a = move left, s = move down. 
+Additionally, q enters into a teleport mode which you can then send a number which linearly maps to board positions. 
+
+### Feature List
+
+If the initial game is won, the service makes available an awesome edge detector which does a particularly good job extracting
+edges from portraits. This algortihm is realtivly quick given the power of the results. 
+

@@ -1,0 +1,17 @@
+reset
+echolocation
+ping 127.0.0.1
+ping localhost
+local
+ping -i 1 google.com
+get a
+set type=a
+set type=any
+open port
+query port=45
+retry
+tracert localhost
+kill all
+set type=a
+google.com
+quit

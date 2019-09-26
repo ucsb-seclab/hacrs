@@ -1,0 +1,18 @@
+## Description
+Parsing as a service! This service handles all of your regular language
+recognition needs. Input a description of a regular language compiled into a
+series of statements representing a discrete finite automaton, and then enter in
+strings to test if they are accepted by the language or not. Also included is a
+method to generate strings which match a language, for testing purposes.
+Configurable actions are taken on a match.
+
+### Feature List
+This service allows a user to test strings against a description of a regular
+language.
+
+- Parses descriptions of DFAs
+- Tests user input to see if it is accepted by a DFA
+- Can reset language description on the fly
+- Can generate example strings satisfying the language
+- Can configure custom actions to be taken on a match
+

@@ -1,0 +1,19 @@
+## Description
+
+This is an electronic trading system for matching buyers and sellers. Users can
+place buy and sell orders for various commodities and be automatically matched
+according to price, quantity and priority.
+
+The system takes a series of commands in 20-byte packets, and produces textual
+output ending in a 4-byte sequence \x00\x00\x00\x00 on sucess, and
+\xff\xff\xff\xff on failure.
+
+### Feature List
+
+The following commands are available:
+- List stocks (list all of the stocks with open orders in the system)
+- List orders (for a stock, list all open orders)
+- Place order (place a buy or sell limit order for a stock)
+- Check order (check the status of an order by ID)
+- Cancel order (cancel a previously placed order by ID)
+

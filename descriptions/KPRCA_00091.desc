@@ -1,0 +1,8 @@
+## Description
+
+A C++ rule-based malware detection engine, with heuristics to handle different file formats. Utilizes an emulator to unpack malware before apply rules.
+
+### Feature List
+
+Malware engine rules can be updated at run-time. Detection algorithm is fast: speed is not affected by number of rules. Emulator supports 19 common instructions with up to 64KB of stack space and 1GB of heap space. Malware is sandboxed so that it cannot modify memory outside of its stack and heap. Heuristics for both executables and bitmaps.
+

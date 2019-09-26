@@ -1,0 +1,8 @@
+## Description
+
+The yolodex is a service roughly based off fingerd.  Fingerd was chosen because the Morris worm, among the first widespread internet worms, targeted a code execution vulnerability in the finger daemon.
+
+### Feature List
+
+This service supports adding, deleting, editing, searching, and sorting contacts, like a rolodex.  It stores a first and last name, phone number, office number, gender, and if the user is known to be a hacker.
+

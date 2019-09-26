@@ -1,0 +1,12 @@
+## Description
+
+A flexible markup language parser with support for a featureful query language.
+
+### Feature List
+
+A customizable parser allows the user to specify the reserved characters of the markup language. The user can adapt the language to reduce the need for esape characters, etc.
+
+Nodes have a tag, namespace, and attributes. The name and value of the attributes can contain any character, if the user inserts an escape character. The language has a special tag, *cml*, that changes the namespace of child nodes, as well as providng other metadata.
+
+Once data has been loaded into the service, the user can retrieve tag, namespace, and attributes, as well as change attributes and query for nodes in the data. The query language supports targetting ancestors, descendants, the parent, children, and siblings, and testing the tag, namespace, attribute, and index of nodes.
+

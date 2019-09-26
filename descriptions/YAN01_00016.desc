@@ -1,0 +1,14 @@
+## Description
+
+The Trusted Platform Module is a specialized piece of hardware that can 1. securely store cryptographic keys, 2. support public key crypto such as RSA and 3. supports a cryptographic hash function such as SHA-1. 
+
+This service is a simple TPM service that only supports the cryptographic hash function (implemented as an XOR hash). Additionally, the secure storage is implemented as a number of Platform Configuration Registers (PCRs) that can only be reset, zeroed or extended (i.e. the value can't be set directly).
+
+This particular TPM supports the following commands which are newline terminated.
+
+R - Resets the PCRs to special values of 0X0X0X... where X is the PCR number (0-7)
+Z # - Zeroes out the PCR #
+E # ## ### - Extends PCR # with the data from address ## to ## + ### (where ### is the size). Extend is basically XOR(HASH(## -> ##+###), #) that is, we xorhash the current PCR value with the hash of the memory in the range from ## to ##+###. Note that if the memory is not mapped, then it will be treated as 0 - meaning the current PCR value is not changed.
+H # DDDD - Hashes the data from DDDD which is of length #. Note that there is a newline between the # and DDDD meaning we first submit the hashing command and then follow through with the data to be hashed. THe hash value is returned back immediately.
+P # - Prints the value of the PCR at #
+

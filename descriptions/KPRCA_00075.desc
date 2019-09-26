@@ -1,0 +1,20 @@
+## Description
+
+A metadata parser built with message passing primitives.
+
+This service is split into multiple processes to provide for concurrency. The original goal was to model it on message passing primitives. The service is split up into these components:
+
+ - Master process 
+ - Network communications and framing
+ - Packet correction
+ - Metadata parsing
+
+When the service is sent a packet that contains valid metadata, it will traverse from the network process, to master process, to packet correction, to master process, and finally to the metadata process that will send a metadata object back to the master process. The master process will then ask the metadata process to dump the metadata to standard out.
+
+### Feature List
+
+ - Built using concurrency
+ - Support for storing metadata with titles, artists, and/or albums
+ - Customizable error correction capability up to 5% of input bytes
+   - No parity is possible if connection is known to be reliable
+

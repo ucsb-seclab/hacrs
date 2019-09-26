@@ -1,0 +1,16 @@
+open
+help
+list
+list [DIR]
+list [DIR D O .]
+list [DIR D O ..]
+mkdir
+mkdir <HARD>
+rmdir <HARD>
+chdir <HARD>
+chdir <DIR>
+chdir <DIR D O .>
+help
+list
+mkdir <HARD>
+list

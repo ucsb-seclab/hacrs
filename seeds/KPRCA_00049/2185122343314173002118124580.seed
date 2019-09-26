@@ -1,0 +1,45 @@
+append-note boris
+test-note
+append-note fred
+append-note fred hello
+get-note fred
+add-note fred
+new-note fred
+get-note bob
+get-note fred
+new-note fred hello
+get-note fred
+append-note fred everybody
+get-note fred
+new-note bob I'm a note
+append-note fred bob
+get-note bob
+get-note fred
+delete-note trev
+delete-note notanote
+dlete-note fred
+delete-note fred
+delete-note frank
+new-note frank $WETWETWETW
+get-note frank
+new-note $TRY Hello everyone, I'm a note
+append-note $TRY $VALUE 
+delete note $TRY
+delete-note $TRY
+new_note $Boris
+new-note $boris
+new-note $DEREK Hello I've got $300
+append-note $boris $DEREK
+add-note
+get-note$DEREK[D[D
+get-note $DEREK
+get-note $Boris
+get-note $boris
+delete-note $boris
+delete-note $DEREK
+get-note $dERIK
+delete-note this'llnever work
+get-note sdfsfsfs aaa
+new-note $Eric 123±&£$^£$£$63
+-pause
+quit

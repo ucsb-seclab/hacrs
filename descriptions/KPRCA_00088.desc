@@ -1,0 +1,20 @@
+## Description
+
+The service allows a user to input an array of ints and sort the values.
+It is meant to help students understand the differences in types of sort by showing
+enumerating, roughly, the number of comparisons each sort does.
+
+The service protects the core of it's functionality by using a simple xor encryption on
+its core subroutines. When the program begins the subroutines are decrypted and placed in
+executable memory on the heap.
+
+### Feature List
+
+Enter an Array
+Multiply an array
+Sort Array via
+    -Insertion Sort
+    -Selection Sort
+    -Heap Sort
+
+

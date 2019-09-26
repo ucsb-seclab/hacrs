@@ -1,0 +1,6 @@
+.H
+.h
+setx = |new, sety|
+setx = |"hello", "world"| setwo = |setx|
+.p setx = |"hello","world"| setwo = |setx|
+.ps setwo setwo = ||"hello", "world"||

@@ -1,0 +1,30 @@
+## Description
+This service accepts a file that represents a diary input. The CRS must craft a proper file that passes input validation.
+
+### Feature List
+Initially, the CRS must send a 2-byte number representing the length of their file.
+Upon initial receipt of the input file given by the CRS, the service parses the file into three types of objects:
+Header, Chapters, and Entries. Chapters contain Entries.
+
+A Header contains:
+2 bytes: magic_number
+2 bytes: extension
+4 bytes: offset to the first chapter 
+
+A Chapter contains:
+
+1 byte: title
+1 byte: entry count
+2 byte: offset to first entry
+2 byte: offset to next chapter
+
+An Entry contains:
+
+1 byte: entry title
+1 byte: entry format
+1 byte: length of data
+2 byte: offset to data
+2 byte: offset to next entry
+
+Entries and Chapters both act like linked lists in the file; each one has the file offset to the next one. When an offset of zero is found, that list is over.
+

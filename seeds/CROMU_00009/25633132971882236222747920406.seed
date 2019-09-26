@@ -1,0 +1,10 @@
+help
+show
+echo haha
+fsinfo
+?
+mkfolder f1
+show
+dump f1
+dump z
+mkfile

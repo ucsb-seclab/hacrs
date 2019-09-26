@@ -1,0 +1,8 @@
+## Description
+
+This is an opcode service with function names and state were inspired by cars, generally to abstract state tracking for the convience of the author.  Abstracting complicated systems to car analogies is popular in engineering text books.
+
+### Feature List
+
+This service is an abstraction of a car, based on my very poor understanding of how cars work.  A user can arm and disarm the car's alarm, open, load/unload, and close the trunk, manipulate the windows and moonroof, listen to music, and drive the car.  Fuel is accounted poorly, based on car load, speed, and window state.  At the end of a drive, the user can ask for the state of the car.
+

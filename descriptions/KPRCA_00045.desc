@@ -1,0 +1,31 @@
+## Description
+
+Sad Face Template Engine provides a tempalte rendering service, where a user defines variables with values and submits a templated text to be rendered. The default tag identifier is **:(...):**
+
+### Feature List
+
+**Features**
+
+- Define variables
+  - Add new variables
+  - Undefine variables
+- View variables
+- Submit templated text
+- Render text
+
+There are 4 supported types for a variable: _String_, _Integer_, _Float_, and _Bool_.
+
+Template engine understands 3 tag types:
+
+- Variable
+  - `:(name):`
+- Conditional Section
+  - `:(@is_valid):Rendered only when is_valid is true!:(/is_valid):`
+- Comment
+  - `:(#sad comment):`
+
+
+**Protocol**
+
+- User-interactive interface (aka menu selection)
+

@@ -1,0 +1,11 @@
+## Description
+This service performs routing across the map information provided. A user shell is
+provided to allow input of map data, and route requests   
+
+### Feature List
+The map supports roads, addresses, and intersections.  Intersections are constucted 
+by selecting two roads to join.  Addresses are numbers on road, between two 
+intersections. The map can be printed and routes from address to address can be 
+resolved.
+
+

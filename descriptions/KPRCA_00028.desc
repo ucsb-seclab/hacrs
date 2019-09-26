@@ -1,0 +1,31 @@
+## Description
+
+This service implements a command line evaluation engine for a programming
+language referred to as SLUR. The service takes in a SLUR expression and
+evaluates it, returning the evaluated expression back to the user. The SLUR
+language is based off of lists. Each expression is itself a list, expressions
+are written usually to modify or build lists in some interesting way. The SLUR
+evaluation engine we provide supports of series of primitive functions which
+the user can use to build their programs. In addition to functions and lists,
+SLUR also has the concept of atoms which are strings of characters and numbers
+that aren't the names of functions. Formally, a list is a parenthesis pair,
+enclosing zero or more atoms or lists.
+
+### Feature List
+
+The built in functions are as follow:
+	* (quote e) returns e
+	* (cons e1 e2) returns the list formed by prepending e1 onto e2
+	* (car e) returns the first element of the list e
+	* (cdr e) returns all the elements of the list e minus the first one
+	* (atom e) returns `t` if e is an atom else returns `nil`
+	* (cond (p1 e1) ... (pn en)) returns the first e whose p is `t`
+	* (equal e1 e2) returns `t` if e1 = e2 else returns `nil`
+	* ((lambda (v1 ... vn) e) e1 ... en) returns e evaluated in the
+	  environment where v1 -> e1, ... vn -> en.
+ 
+Our SLUR machine also implements CAKE reduction functionality in the lambda
+function. If the result of our evaluated lambda is a list consisting of the
+atom "CAKE" repeated 4 times it appends the atom "That's a lot of CAKE!" to the
+list.
+

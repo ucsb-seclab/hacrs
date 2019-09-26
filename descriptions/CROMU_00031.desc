@@ -1,0 +1,27 @@
+## Description
+
+This is a service that mimics a chess board and pieces. Each piece on the board moves similarly to its respective chess piece. Unlike chess, however, collisions on the board result in a swap of location rather than the opponent's piece being removed from the board. The user must find the combination of valid moves that will prove the vulnerability.
+
+### Feature List
+
+The game opens by printing the state of the board:
+
+        jhilkihj
+        gggggggg
+        ........
+        ........
+        ........
+        ........
+        aaaaaaaa
+        dbcfecbd
+
+The user must take turns entering moves as both the white and black player. Each move must follow the chess piece's valid move: pawn, rook, knight, bishop, king, and queen.
+
+The user may print the current board layout, make a move, or quit the game.
+
+The game accepts input in the form of source coordinates and destionation coordinates x,y x,y
+
+If a piece is located at the source coordinates the game will attempt to move it to the destination. It will check to see if the move is a valid one for that particular piece (following standard chess rules) and to make sure the path is clear from source to destination. If an opponent's piece is located at the destionation and it is an otherwise legal move, the game will swap the pieces.
+
+Play continues until the user exits the game (or the vulnerable condition is achieved).
+

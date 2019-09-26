@@ -1,0 +1,16 @@
+## Description
+
+This challenge set contains 3 binaries that closely mimic the behavior of three services: fingerd, sendmail, and rsh and an additional 'front door' binary that provides access to the others. These services were involved in the propagation of the original Internet Worm written by Robert Morris. The fingerd service was vulnerable to a simple stack buffer overflow, originally caused by use of the gets() function. The sendmail service was vulnerable to a logic bug that existed in debug mode which allowed the shell interpreter to be the recipient of the message. The rsh service was inherently vulnerable by using a naive trust model and is vulnerable to password brute force attacks.  
+
+The services in this challenge set are lookupd, inspired by fingerd, mailsender, inspired by sendmail, and ish, inspired by rsh. Each contains similar functionality to the original services and the same original bugs. 
+
+### Feature List
+
+This is a multi binary challenge set. The first binary acts as the front door, handling the initial connection and directing input to one of three services (lookupd, mailsender, and ish). 
+
+Lookupd is a lookup service that provides name and contact info for users. This service is randomly populated with fake user data on startup. It allows querying for a particular user or listing all users on the system. 
+
+ISH is an internet shell service. It requires a login and password and implements a dummy shell with a limited command set. It contains one set of static credentials and then generates random additional credentials on startup. 
+
+Mailsender is a mail server. It allows listing known addresses, dumping mail queues, reading messages, and posting new messages. 
+

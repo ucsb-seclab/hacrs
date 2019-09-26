@@ -1,0 +1,23 @@
+create enjoyable
+open enjoyable
+mkdir
+mkdir Home
+list
+help
+close_all
+close all
+list
+rmdir Home
+mkdir Home2
+mkdir Home3
+Chdir Home3
+chdir Home3
+modify enjoyable
+modify enjoyable 0
+list
+create enjoyable
+list
+open enjoyable 0
+modify enjoyable 0
+ksa
+quit

@@ -1,0 +1,37 @@
+help
+dump
+delete
+mkfolder
+mkfolder new
+delfolder new
+mkfolder new
+dump new
+dump a
+show new
+fsinfo
+delete new
+delete
+make
+a
+HELP
+/
+?
+show
+help
+show
+show new
+show d
+show mkfolder
+mkfolder a
+mkfolder b
+mkfolder c
+mkfolder d
+mkfolder e
+delfolder b
+echo
+echo mkfolder
+ll
+mkfolder%
+echo mkfolder
+mkfolder a
+mkfolder w

@@ -1,0 +1,34 @@
+## Description
+
+This CB emulates an online job application form. An applicant moves through
+several pages of grouped questions (Candiate Info, Education, Address, etc etc)
+and is forced to enter each question on the form before continuing to the next
+page. The pages are seqential and, once completed, can be revisited using the
+"prev" command. Completed pages can have indivial questions updated with new
+answers or an applicant can simply review his or her answers. 
+
+Once the form is completed the user can "submit" the form by exiting, or
+"discard" by using ctrl-c. The two are functionally equivalent, but we would
+hate to feel like someone didn't have a chance to throw their application away.
+
+The code attempts to model a web interface. Each input has a textfield,
+a buffer to hold the response, and a verification function that makes sure the
+input is valid. 
+
+### Feature List
+
+And applicant can enter input when asked a question, or navigate accross the
+application with the following commands:
+
+All commands begin with '**' and may be entered at any time during the CB
+**prev 
+    <Return to the previous page>\n);
+**next 
+    <Move to the next page>\n);
+**update [id] 
+    <Update field, ex: \Update First Name\>
+**help 
+    <Print this dialogue>
+**exit 
+    <Exit application>
+

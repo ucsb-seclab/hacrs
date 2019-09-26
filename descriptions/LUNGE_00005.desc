@@ -1,0 +1,21 @@
+## Description
+
+This is an IPC challenge binary for use within DARPA's Cyber Grand Challenge that shows DECREE IPC can be used to replicate pipelined processes.  Traditional unix pipelined processes read data from stdin and send to stdout, providing some sort of transformation or computation on the data.  This challenge binary replicates this execution model by linking together the provided functions made available by disperate challenge binaries in an arbitrary fashion.
+
+### Feature List
+This CB includes a number of small executables that provide a unique function that can be linked together in a user defined order to simulate the unix pipeline IPC mechanism.  
+
+A few notes on the underlying implementation:
+* Each function made available for the IPC chain is implemented in a unique executable.
+* Each 'function' processes input per line, exiting upon recieving a line that begins with a null byte.
+* Each 'function' can be configured to receive input from the network client or from another executable.
+* Each 'function' can be configured to transmit output from the network client or from another executable.
+
+The functionality made available by the CB is split across the following executables:
+* CB\_1 implements the command and control mechanism for setting up the IPC and handles passing any required configuration to the executables in the IPC pipeline.
+* CB\_2 provides the 'contain' function for the pipeline.  The 'contain' function implements a 'grep' like function utilizing the Morris-Pratt fast pattern match algorithm.
+* CB\_3 provides the 'word-count' function for the pipeline.  The 'word-count' function implements a 'word count' utility, akin to 'wc' on unix systems, which provides counts of the characters, words, and lines for each line.
+* CB\_4 provides the 'does-not-contain' function for the pipeline.  The 'does-not-contain' function implements a 'inverse grep' like function utilizing a niave search algorithm.
+* CB\_5 provides the 'compress' function for the pipeline.  The 'compress' function implements a per-byte Run-Length-Encoding (RLE) mechanism to compress input.
+* CB\_6 provides the 'decompress' function for the pipeline.  The 'decompress' function undoes the RLE mechanism provided by 'compress'.
+

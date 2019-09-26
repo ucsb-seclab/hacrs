@@ -1,0 +1,72 @@
+list
+create X.txt
+delete X.txt
+list
+mkdir new
+chdir new
+list
+help
+create read.txt
+list
+chdir ..
+list
+mkdir new/old
+list
+mkdir new\old
+list
+rmdir newold
+rmdir new/*
+rmdir new/old
+list
+rmdir new\old
+list
+chdir new
+list
+read read.xt
+read read.txt
+create read2.txt
+list
+read 3
+read 4
+read 0
+read read.txt
+create 1
+list
+read 1
+help help
+help read
+vlose_all
+close_all
+help close_all
+help
+ help mm
+help asd
+help //
+chdir ///
+read 0 0 5
+list 0
+list 1
+list
+list read.txt
+help list read.txt
+list ..
+list .
+list ../new
+list ..//new
+list ..\\new
+mkdir ../old
+list
+list ../old
+list ../old/..
+help
+read 0 1
+read 0
+read9999
+modify 0
+modify 0 0
+list
+modify 1
+modify 1 0
+modify read.txt 0
+modify 1 0
+history

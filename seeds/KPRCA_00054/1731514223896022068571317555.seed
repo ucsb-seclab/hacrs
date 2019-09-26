@@ -1,0 +1,32 @@
+open
+open money
+open dollar
+open 1
+open <1>
+help
+list
+open <DIR>
+open <D O>
+list
+open D O
+open DIR D O
+open <DIR>
+open <DIR D O>
+read
+read <DIR>
+read <D O>
+heko
+help
+list
+create
+open
+read
+directory
+open
+help
+list
+read <DIR>
+delete <DIR>
+chdir <DIR>
+chdir <DIR> D O
+quit

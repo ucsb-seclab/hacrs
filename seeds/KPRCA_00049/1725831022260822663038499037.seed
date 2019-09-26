@@ -1,0 +1,21 @@
+new note
+new-note asdf
+new-note ASD
+new-note $BLAh $LASJDASD
+dir
+help
+commnants
+sadf
+get-note $BLAh
+get-note $lkjasdf
+new-note $ALALA lsajdf
+get note $ALALA
+get-note
+get-note $ALALA
+get-note $LASJDASD
+new-note $1 123
+append-note $1
+append-note $1 ALALA
+get-note 1
+get-note alala
+get-note $1

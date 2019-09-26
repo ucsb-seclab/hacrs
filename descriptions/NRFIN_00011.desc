@@ -1,0 +1,12 @@
+## Description
+
+The megalomaniacal mice are at it again.  This time, the plan is to develop mind-controlling cheese.  And who doesn't like cheese.
+
+While this may sound like a simple enough task, it turns out the manufacture of mind-controlling cheese requires the ability to fold proteins in a precise manner.  The problem is, such folding computations require a lot of compute power.
+
+The mice have a solution: build a botnet!
+
+### Feature List
+
+The CB requests an HTML-like index page from the CRS.  The CRS responds to this request with a document that links to further resources necessary to render the complete document.  These further resources are specified as paths.  If certain constraints on the paths are satisfied, a vulnerable path canonicalization function is called.
+

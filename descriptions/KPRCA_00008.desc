@@ -1,0 +1,6 @@
+## Description
+This service implements a storage device over a USB-like network protocol. Basic functionality is implemented including read, write, and query size. The protocol implements functionality to eventually support hosting multiple devices on one server.
+
+### Feature List
+Protocol based on proven technology used everyday by millions of people. Storage device emulates a 128 blocks with a 512-byte block size. This gives the user an impressive 64KB (!) of disk space. Large enough to hold one picture (maybe?). Privacy guaranteed because your data will never be stored on disk, and is lost as soon as you disconnect.
+

@@ -1,0 +1,35 @@
+## Description
+
+You are lab rat in a maze constructed by a duo of megalomaniacal mice with lofty aspirations of taking over the world.
+
+You don't care so much about that, but you do care about cheese - and the mice are charging to use the fast ways through the maze.  Rich lab rats can afford the FASTLANE and get to their cheese faster.  Poor lab rats like yourself need to take more circuitous routes.
+
+Your challenge is emulated as an HTTP-like service where the "cheese" are files and what you're after is file contents.
+
+### Feature List
+
+Everyone gets "free" content via the SLOWLANE, faster content for those who can afford the FASTLANE.
+
+Non-FASTLANE file request:
+client: 
+	MOOCH <URI>\n
+server:
+	<pause>
+	<data>
+
+FASTLANE file request:
+client:
+	AUTH <credit voucher key>\n
+	GIMME <URI>\n
+server:
+	<data>
+
+Using a FASTLANE verb consumes a credit in the user's account.
+
+Verbs:
+* TIP (FASTLANE) / SMORE (SLOWLANE): Get the first 4 bytes of a chosen file.  Requires a filename as argument, e.g.: "TIP abcdefghijklmnop\n"
+* STATUS (FASTLANE) / YOUUP (SLOWLANE): A simple ping-like query asking whether the server is responsive.
+* GIMME (FASTLANE) / MOOCH (SLOWLANE): Get the entire contents (16 bytes) of a chosen file.  Requires a filename as argument.
+* LIST (FASTLANE) / SUP (SLOWLANE): Get a listing of filenames.
+* AUTH: Redeem a voucher for FASTLANE credits.
+

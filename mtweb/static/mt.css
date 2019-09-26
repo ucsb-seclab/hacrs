@@ -1,0 +1,111 @@
+.leftbox {
+  display: inline-block;
+  width: 250px;
+  //height: 100px;
+  margin: 1em;
+  vertical-align: top;
+  //border: 3px solid #73AD21; 
+  float: left;
+}
+
+.rightbox {
+  display: inline-block;
+  width: 830px;
+  height: 650px;
+  margin: 1em;
+  border: 3px solid #73AD21; 
+}
+
+.functionbox {
+  display: inline-block;
+  width: 100%;
+  //height: 100px;
+  //margin: 2em;
+  padding: 1em;
+  border: 3px solid #73AD21; 
+  //vertical-align: top;
+  float: left;
+}
+
+.payoutbox{
+  display: inline-block;
+  width: 100%;
+  //height: 100px;
+  //margin: 2em;
+  padding: 1em;
+  border: 3px solid #73AD21; 
+  //vertical-align: top;
+  float: left;
+}
+
+.clickbox{
+  display: inline-block;
+  width: 100%;
+  //height: 100px;
+  //margin: 2em;
+  padding: 1em;
+  border: 3px solid #73AD21; 
+  //vertical-align: top;
+  float: left;
+}
+
+#collapseTrigger{
+  color:#fff;
+  display: block; 
+  text-decoration: none;
+}
+
+#ProgramcollapseTrigger{
+  color:#fff;
+  display: block; 
+  text-decoration: none;
+}
+
+#TargetcollapseTrigger{
+  color:#fff;
+  display: block; 
+  text-decoration: none;
+}
+
+#SeedcollapseTrigger{
+  color:#fff;
+  display: block; 
+  text-decoration: none;
+}
+
+#NotescollapseTrigger{
+  color:#fff;
+  display: block;
+  text-decoration: none;
+}
+
+#submitButton{
+  white-space: normal;
+}
+
+.image{
+  margin-bottom: 15px; 
+}
+
+iframe {
+  height: 605px;
+  width: 810px;
+  resize: both;
+}
+
+.btn{
+    white-space:normal !important;
+    word-wrap:break-word; 
+}
+
+
+.program_transmitted {
+    font-family: "Courier New", Courier, monospace;
+    color: blue;
+}
+
+.program_recevied {
+    font-family: "Courier New", Courier, monospace;
+    color: red;
+}
+

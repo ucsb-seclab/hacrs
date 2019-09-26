@@ -1,0 +1,13 @@
+## Description
+This service implements a RAM-based filesystem and provides a simple shell 
+to interact with the filesystem.  
+
+### Feature List
+The shell supports the creation and deletion of folders.  It allows for files
+with both printable and non-printable data to be created, appended to, and deleted. 
+It also provides basic directory listing and filesystem utilization reporting commands.
+
+The filesystem is defined by a superblock which contains a list of pointers
+to inode pages.  The inodes on these pages can point to directories or files
+made up of blocks.  The block size is 512 bytes.  
+

@@ -1,0 +1,6 @@
+## Description
+
+This is an unusually simple service written by a military cadet as his first ever C program. It is intended as a data point as an incredibly simple service, with an incredibly simple vulnerability, written by an inexperienced programmer.
+
+The underlying service itself is a palindrome detector.
+

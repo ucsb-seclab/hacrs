@@ -1,0 +1,18 @@
+## Description
+Path Tracer as a Service brings the latest in photorealistic computer graphics
+to your fingertips, anywhere in the world! Our state of the art path tracing
+software renders your 3D scenes into breathtaking HD...ish images. Simply
+input a description of your scene consisting of a camera and spheres or planes,
+and in no time a rendering of your image will be available for you to download
+and enjoy.
+
+### Feature List
+This service is a path tracing program which supports a textual interface for
+inputing information about a 3D scene and rendering an image of that scene into
+a fixed size image in PPM format.
+
+- Parses descriptions of 3D scenes consisting of geometric primitives
+- Supports spheres and planes
+- Can have either diffuse or specular reflection
+- Objects can emit light
+

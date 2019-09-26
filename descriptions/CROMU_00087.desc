@@ -1,0 +1,14 @@
+## Description
+
+The user can add and remove recipes as well as pantries containing ingredients.
+
+### Feature List
+
+The main menu presents the user with the option to go into the Recipe, Pantry or Query menu.
+
+The Recipe menu allows a user to add and remove recipes, list all or just a single recipe or print the cost of each recipe.
+
+The Pantry menu allows a user to create and delete pantries, print all or just a single pantry or modify items in the grocery list.
+
+The Query menu allows a user to select a pantry and print all recipes that can be made with items in that list. They can also query for recipes that they can make given an amount of money. Finally, they can print the cheapest and most expensive recipe.
+

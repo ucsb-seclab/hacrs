@@ -1,0 +1,11 @@
+## Description
+This CB, given a list of nodes and edges as input, calculates the nodes in the shortest path from a given starting node to a given ending node.
+
+### Feature List
+The CB accepts three commands:
+  - Send Nodes: Allows the user to input a set of nodes
+  - Send Edges: Allows the user to input a set of edges
+  - Run SPT: Instructs the program to calculate the shortest path from a starting to an ending node
+
+Upon completion of the SPT calculation, a list of nodes is sent back to the user.
+

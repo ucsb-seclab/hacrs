@@ -1,0 +1,26 @@
+<html xmlns="http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2006-07-14/ExternalQuestion.xsd">
+    <head>
+        {{{ header }}}
+    </head>
+
+    <body>
+
+    <table class="table" id="program-table">
+    <tr>
+    <th>
+    ID
+    </th>
+    <th>
+    Name
+    </th>
+    </tr>
+
+    </table>
+
+    <script src="/static/programs.js"></script>
+
+    <script>
+        var programs = JSON.parse(unescape("{{ programs }}"));
+    </script>
+
+</html>

@@ -1,0 +1,29 @@
+list
+create readme.txt
+list
+open readme.txt
+help
+help open
+help list
+help create
+help open
+help close
+help read
+help modify
+help delete
+help mkdir
+
+help rmdir
+help chdir
+help quit
+modify readme.txt 1
+list
+modify 0 1
+hello from mturk EOF
+\EOF
+ how can I use EOF?
+I dont know as a VIM hater
+\EOF
+/EOF
+:q
+:c

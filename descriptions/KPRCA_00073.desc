@@ -1,0 +1,17 @@
+## Description
+
+Pattern Finder is a service that user to quickly detect the presence of a set
+of known patterns within a blob of data.
+
+The service first reads in a series of pattern definitions from the user. It
+then compiles a pattern search machine that will be used to detect patterns in
+subsequently data entered by the user. The user is provided with a list of
+detected patterns once the search machine has finished running.
+
+### Feature List
+
+ * Supports up to 4096 patterns
+ * Supports patterns up 4096 bytes in size
+ * Supports detecting patterns in up to 64 kilobytes of input
+ * Super fast!
+

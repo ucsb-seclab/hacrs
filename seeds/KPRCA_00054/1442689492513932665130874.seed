@@ -1,0 +1,51 @@
+list [file ..]
+list [KPRCA 00054 ..]
+list [KPRCA]
+create <KPRCA 00054>
+open <KPRCA 00054>
+close <00054>
+close <KPRCA 00054>
+close <1>
+delte <KPRCA 00054>
+delete <KPRCA 00054>
+detele <KPRCA 00054>
+create <1>
+open <1>
+read <1>
+read <1> [1] [1]
+help [open]
+help [read]
+create <2>
+open <2>
+delete <1>
+mkdir <spoon>
+create <12>
+open <12>
+read <3> [1] [1]
+modify <12> [3]
+modify <3> [1]
+modify <12> [1]
+chdir <spoon>
+chdir <spoon>
+mkdir <led>
+close <12>
+clese <3>
+close <3>
+close [<12>]
+close <1>
+close <12> (3)
+help [close]
+help close 12
+help read
+help mkdir
+help chdir
+help delete
+help quit
+list [led]
+list [spoon]
+list [spoon ..]
+list [12]
+list [12 ..]
+close_all
+help close_all
+rmdir [spoon]

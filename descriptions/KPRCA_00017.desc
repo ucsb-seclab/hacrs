@@ -1,0 +1,14 @@
+## Description
+
+HackMan is a game that the player needs to guess the word correctly. The word list is pre-populated with 20 dictionary words of various length. Unlike its sister game, Hangman, HackMan allows the player to try as many times as possible until he or she gets the answer. The word is picked based on the seed value the user provides. When a player wins, he or she can leave a comment to brag. However, this comment is immediately discarded. It's just there for making players feel good about themselves. The game even keeps track of how many tries a player tried for each word. This is a solid game for all ages.
+
+### Feature List
+
+It's a game. That's the only feature.
+
+There are some control characters to access limited menu:
+
+  - '+' starts a new challenge word
+  - '?' resets the current challenge (# tries & progress)
+  - '/' quits the game
+

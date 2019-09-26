@@ -1,0 +1,14 @@
+## Description
+
+A simple game that sends a user a 81 cell (9x9) grid. Each cell has a value in it 1-9 and must adhere to 3 simple
+rules. A cell's value must be unique to its row, column, and 3x3 subgrid the value is contained in. 
+
+### Feature List
+
+The CB stores 0-1 gridders at any given time. A player may:
+    -Request a new Gridder
+    -Submit a solution to the Gridder
+    -Ask for the max/min difficulty settings
+    -Give up on a current gridder
+    -Change Difficulty
+

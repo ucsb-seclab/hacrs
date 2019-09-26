@@ -1,0 +1,14 @@
+help
+echo test
+ls
+man
+show
+show -f
+mkfolder test
+show
+delfolder test
+ls
+show
+fsinfo
+?
+bye

@@ -1,0 +1,11 @@
+open a
+open (a)
+open [a]
+creat [a]
+create (a)
+open (a)
+close (a)
+close (0)
+close_all
+modify
+modify <1>

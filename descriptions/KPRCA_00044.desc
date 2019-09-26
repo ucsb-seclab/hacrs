@@ -1,0 +1,17 @@
+## Description
+
+This service implements a simple text generator based on a Markov process. The initial states are built using static text from the great essayist Jonathan Swift. Additional states can be introduced by training, during which the service will generate text using the current states and an included dictionary, and if the user approves, the text will be added to the states.
+
+### Feature List
+
+As an ultra-secure service, attempts to exploit this service will fail because of its novel function pointer protection (FUNpro). Additionally, the text generation uses an advanced RNG that makes use of the latest in processor technologies (SSE2).
+
+The available commands are:
+
+ * Reprotect - FUNpro!
+ * Add word - add a word to the internal dictionary
+ * Sort words - sort the internal dictionary
+ * Search words - search through the dictionary for a word or partial word
+ * Generate text - generates text randomly using the current states
+ * Training - add new states via a machine learning procedure
+

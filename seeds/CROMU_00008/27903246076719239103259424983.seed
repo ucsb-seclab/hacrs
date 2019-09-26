@@ -1,0 +1,30 @@
+login
+find command
+add fn
+enter fn
+add field
+find Terry
+enter fn
+list fn
+show database
+open database
+enter new record
+new
+new record
+create record
+fn=Terry
+enter fn=Terry
+edit
+edit database
+insert (fn = "Terry" and ln = "Adrian" and un = "TADRIAN" and bd = "09/13/1970")
+Terry
+Adrian
+TADRIAN
+09/13/1970 01:30:00
+09/13/70 01:30:00
+insert
+Terry
+Adrian
+TDADRIAN
+09/13/70 01:30:00
+FIND

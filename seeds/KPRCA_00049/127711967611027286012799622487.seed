@@ -1,0 +1,14 @@
+new-note Yancy advice
+append-note Yancy hahaha
+get-note Yancy
+delete-note Yancy
+append-note Yancy
+delete-note Yancy
+delete-note Yancy
+new-note 1
+new-note 1 2
+append-note 1 2
+get-note 1
+delete-note 1
+quit
+exit

@@ -1,0 +1,27 @@
+## Description
+Eddy is your new favorite text editor! With an efficient binary command
+interface and advanced features such as regular expression searching, your
+productivity will skyrocket when compared to your experience with competing
+text editors.
+
+### Feature List
+This service is a text editor similar to the 'ed' utility.
+
+- Supports the following commands:
+    * Append
+    * Change
+    * Delete
+    * Get mark
+    * Insert
+    * Inverse Search
+    * Join
+    * List
+    * Mark
+    * Number
+    * Quit
+    * Transform
+- Supports searching a file by regular expression
+- Supports addressing file locations by line number
+- Supports several marks for storing and addressing locations
+- Contains advanced debugging features
+

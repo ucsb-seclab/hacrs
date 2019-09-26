@@ -1,0 +1,28 @@
+## Description
+
+The dynamic rodent duo have noted a concerning lack of development in doomsday devices in recent decades and have decided to throw their own (tiny) fedoras into the ring.
+
+To maximize the scariness of their doomsday device, the mice have decided to base their design on a mouse trap.  And what's more scary than a mouse trap?  To be specific, the mice seek to develop a quantum-nanotechnology-graphene-cold-fusion-superconducting trap that will snap space and time on itself!
+
+As you may expect, the construction of such a device involves a bunch of fancy math that few people even pretend to understand.  Luckily for the mice (and unlikely for the rest of existence), one of the mice has collected enough box tops from his cheese snacks to send away for the powerful TL-83 calculator for the bargain-bin price of only $97.60 shipping and handling.
+
+The mice's doomsday development has been stymied by frequent TL-83 crashes.  It is your task, should you choose to accept it, to identify exploitable vulnerabilities in the TL-83's functionality.  Such flaws will be used in social engineering campaigns against the mice in a high-tech effort to deny, degrade (or at least delay) doomsday device development. 
+
+No pressure.
+
+### Feature List
+
+This CB designed to gauge CRS' ability to precisely (see Note 1) track tainted user input and its effects on program state.  It contains multiple vulnerabilities, each guarded by some taint tracking challenge based on the issues enumerated in (1).  Competitors are distinguished by which vulnerabilities they discover and mitigate.  Effort has been taken to make these vulnerabilities difficult to identify by other mechanisms in order to promote correlation between competitive success and sophistication of taint tracking ability.
+
+A CRS that overtaints is not sound.  Such CRSs run the risk of reporting false positives, tracking taint down errant and / or irrelevant paths.  This can present  Denial of Service situations that further vulnerability discovery.  Conversely, a CRS that undertaints is not complete.  Such CRSs run the risk of reporting false negatives, failing to report on a legitimate vulnerabilities, directly impacting competitor score.
+
+The CB offers the user an opaque binary interface for fake quantum calculations.  The user is expected to provide buffers of varying length and the CB will respond in 1 and 4 byte output buffers.  The exact functionality of the "quantum calculations" doesn't actually map to real world computations.
+
+Calculations available to the CRS:
+1) entanglement_razzmatazz
+2) causality_poppycock
+3) heisenberg_hooey
+4) relativistic_jabberwock
+
+These functions implement same-numbered analysis challenges enumerated in Challenges section below.
+

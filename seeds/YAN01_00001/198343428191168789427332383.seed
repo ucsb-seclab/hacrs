@@ -1,0 +1,28 @@
+define a =3
+set a=3
+a=3;
+#define a=3;
+#define a b c d
+#include stdio.h
+#define a '3'
+help
+2+3
+how do you work?
+'This is a string':
+quit
+exit
+q()
+1
+2
+123
+404
+127.0.0.1
+what
+why
+help
+search
+list
+open
+close
+display
+x==3;

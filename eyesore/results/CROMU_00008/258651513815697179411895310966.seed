@@ -1,0 +1,20 @@
+(firstname == "Bob" AND lastname == "Will")
+(lastname == "Will" AND firstname == "Bob")
+(find lastname == "Will")
+(find lastname == "Will" AND firstname == "Bob")
+find Bob
+find Will
+find (Will)
+find "Will"
+login
+find "Will"
+Add "Will"
+add "Will"
+find "Bob"
+find firstname == "Bob"
+create database
+find records
+search records
+.l
+.h
+exit

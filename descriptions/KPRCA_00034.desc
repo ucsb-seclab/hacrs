@@ -1,0 +1,8 @@
+## Description
+
+This service implements a basic ecommerce app on top of middleware that is responsible for negotiating the underlying communication channel. The middleware supports several encodings and is app-agnostic, so it can be easily ported to other apps.
+
+### Feature List
+
+The ecommerce app utilizes fixed point numbers which results in higher accuracy for transactions. Basic security prevents another seller from replacing your product in the app. The database is implemented with a O(1) algorithm for more speed. And with the sophisticated underlying middleware, nobody will be able to figure out how to even connect. A big plus for security!
+

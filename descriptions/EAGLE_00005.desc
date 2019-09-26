@@ -1,0 +1,11 @@
+## Description
+
+An interactive guessing game in which players guess one letter at a time in a attempt to guess a randomly selected word before making too many incorrect guesses.
+
+### Feature List
+
+* This CB combines a player specified value with contents taken from the CB's secret page to select a secret word from a self contained word list.
+* Players may repeat the game as often as they wish within the timeout period of the CB.
+* Whenever a player correctly guesses the secret word before being hung, the player is offered the chance to enter their name into a high score list. 
+* A single CGC binary POV which performs a coin flip to determine which vulnerability to exercise may be found in the pov_1 directory.
+

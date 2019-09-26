@@ -1,0 +1,13 @@
+commands
+search list
+|23|11|
+open |23|11|
+play |23|11|
+opens 23, 11
+open 23, 11
+open 
+delete 23, 11
+list
+23|11
+23,11
+search 23

@@ -1,0 +1,37 @@
+<html xmlns="http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2006-07-14/ExternalQuestion.xsd">
+    <head>
+        {{{ header }}}
+    </head>
+    <body>
+    {{{ internal_links }}}
+
+    <script src="/static/internal/showtasklet.js"></script>
+
+    <table class="table">
+    <tr>
+        <td>ID</td>
+        <td id="tid"></td>
+    </tr>
+    <tr>
+        <td>Program</td>
+        <td id="tprogram"></td>
+    </tr>
+    <tr>
+        <td>Type</td>
+        <td id="ttype"></td>
+    </tr>
+    <tr>
+        <td>Amount</td>
+        <td id="tamount"></td>
+    </tr>
+    </table>
+
+    <button id="startbtn">Work on Tasklet</button>
+
+    <script>
+        var username = "{{username}}";
+        var tasklet = JSON.parse(unescape("{{tasklet}}"));
+        console.log(tasklet);
+    </script>
+</html>
+

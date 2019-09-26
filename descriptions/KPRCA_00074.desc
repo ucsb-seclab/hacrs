@@ -1,0 +1,10 @@
+## Description
+
+A constant-time VM interpreter and validator written in C for fast data filtering. The user provides a filter program and a set of data, which is processed and the results returned.
+
+### Feature List
+
+Separate validation and execution stages increases the performance of the interpreter as the amount of data increases. There is a one-time cost to make sure the program is correct, and then the interpreter can make assumptions that increase performance.
+
+Support for many instructions: 13 arthimetic instructions, 4 conditional jumps, byte/half-word/word loads and stores, and read/write system calls. Loops are forbidden to guarantee that the execution is time-bound. During execution, the filter has access to a 1KB stack and the input data. Loads and stores are bounds-checked to prevent undefined behavior.
+

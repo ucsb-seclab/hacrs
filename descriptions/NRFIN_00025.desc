@@ -1,0 +1,27 @@
+## Description
+
+The mice are hungry and a cheese heist is in order. The heist requires strict operational security to pull off. Quincy (the brains of the mouse duo) will distract Snuggles (the house cat) while Whiskers (the duo's brawn) will bolt into the kitchen and grab the cheese sitting on the counter. The timing of these actions is critical; communication compromise would equate to mission failure and slightly hungrier mice.
+
+Unfortunately for the mice, the only practical communication medium is radio and Snuggles recently earned a wide-spectrum radio jammer by sending in enough box tops from his cat food. However, Snuggles' jammer cannot jam all frequencies at once and must make sweeps over the spectrum. The mice plan to exploit this weakness by frequency hopping, evading the jammer with some likelihood of success for small portions of their message. QUIETSQUARE must reliably reconstruct these fragmented messages.
+
+Because the amount of data that can be sent in any burst is so limited, Quincy sought to minimize cryptographic overhead. Quincy decided on a one-time-pad design and a preshared book of key, to be XORed with ciphertext in transit.
+In doing so, Quincy hoped the communications would be: (1) provable secure, (2) zero cryptographic overhead in terms of message length.
+
+Quincy version-tracked his work (of course) on Cheesehub, but inadvertently made the source code public. Snuggles grabbed a copy before Quincy could protect it, but time was running short and Quincy decided to go ahead with the communications mechanism, because the one-time pad had not been compromised.
+
+You take the role of Snuggles and must prevent the mice from stealing your humans' cheese. You can see and inject ciphertext in transit.
+You have a copy of QUIETSQUARE (this CB). If you also had the one-time-pad, you could read all of the communications between the mice and it would be game over.
+
+Instead, you plan to (1) enable your sweep-jammer to force message fragmentation, (2) exploit a memory corruption vulnerability in QUIETSQUARE to deny communications ability to the mice.
+
+### Feature List
+
+The QUIETSQUARE client accepts 3 types of messages:
+* Connection Termination (ConnTerm).  This is 256 consecutive NULL bytes and causes connection reset).  To avoid ambiguity, no other messages begin with a 0x00 byte.
+* One-time-pad: 16B, expected immediately after connection reset.
+* Message data, possibly fragmented, length: 256B.
+
+Of note:
+* The contents of the one-time-pad are not one-time; the pad is used verbatim over and over again, no special key scheduling algorithm.  Quincy needs to do his cryptography homework.
+* Snuggles wins an injection race too infrequently for repeated spamming of the ConnTerm message to have the desired effect; he must string both sides of the conversation along and ultimately cause memory corruption on to both Quincy and Whiskers' clients.
+

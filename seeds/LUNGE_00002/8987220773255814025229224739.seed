@@ -1,0 +1,6 @@
+ch_sec |
+put foo bar\x00
+put foo bar\x00\n
+ch_sec |
+ch_sec |\n
+ch_sec |A|++|++|AAAAAAAAAA

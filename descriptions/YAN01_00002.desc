@@ -1,0 +1,4 @@
+## Description
+
+This is a very simple notional service where users can query the server to calculate and return the x and y coordinates (position in meters) of a tennis ball launged from the origin (0,0) given the initial x and y velocity components (in meters per second). Additionally, the user can request the calculations to start from a specific point in time instead of time zero. Time is incremented in 1/10 intervals. In short, if you plotted the (x,y) coordinates output from this service starting from time 0, then you should see a nice parabola. 
+

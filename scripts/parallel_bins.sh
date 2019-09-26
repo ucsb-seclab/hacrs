@@ -1,0 +1,4 @@
+#!/bin/bash -e
+
+cd $(dirname $0)
+(cd /results; ls -d ?????_?????) | parallel -v $@

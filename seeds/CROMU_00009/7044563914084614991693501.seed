@@ -1,0 +1,26 @@
+help
+show
+c
+C://
+mkfolder
+show
+directory
+mkfolder
+dump
+echo
+fsinfo
+?
+show
+mkfolder apple
+show apple
+delfolder apple
+mkfolder shell
+mkfolder temp
+mkfolder imaging
+show imaging
+dump imaging
+dump
+echo lol
+imaging
+echo lol mkfolder apple
+bye

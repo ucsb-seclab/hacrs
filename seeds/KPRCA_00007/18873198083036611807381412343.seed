@@ -1,0 +1,8 @@
+query 1
+add 126
+list all
+enable all
+delete 23
+add 127.0.0.1
+exit
+quit

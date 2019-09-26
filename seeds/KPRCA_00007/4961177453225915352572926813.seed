@@ -1,0 +1,113 @@
+normal
+mode: normale
+mode:normal
+enable
+mode:enable
+mode enable
+!enable
+1
+mode: enable
+<enable>
+<normal>
+list
+[normal]
+[enable]
+help
+mode 1
+mode list
+/enable
+add
+delete
+query
+query routs
+add route
+enable router
+add route
+normal list
+normal
+list
+normal add
+normal.add
+normal>add
+normal
+add
+add route
+router
+1
+delete
+add rooute
+add route
+add
+normal
+add
+normal
+add route
+normal list
+add
+normal list
+add router
+router
+edit
+1
+run
+hop
+
+2
+hop?
+next
+next?
+hop route
+IP
+IP hop
+IP route
+normal
+hop
+IP address
+router address
+enable
+enable router
+enable 19gjer95u7y6
+enable router "password"
+enable "password"
+enable [password]
+enable <password>
+enable "admin"
+enable "router"
+enable delete
+enable (password)
+enable ""
+enable ()
+enable: "password"
+enable: "admin"
+enable- "password"
+enable/ "password"
+enable|password
+enable\password
+enable?password
+enabel?"password"
+enable?"password"
+enable? password
+enable? "password"
+normal
+normal: "query"
+normal: query
+normal query
+normal: addd
+normal: add
+normal: "add"
+"add"
+add route
+route "add"
+query
+route query
+2345
+lsit
+list
+help
+
+!help
+stop
+mode normal
+run  query
+mode "query"
+mode: query

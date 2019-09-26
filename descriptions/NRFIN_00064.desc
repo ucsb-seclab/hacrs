@@ -1,0 +1,36 @@
+## Description
+
+You awaken in a dark room to the sound of flapping and moaning. With a torch in your hand, you slowly descend a stone staircase that you can only hope will lead to safety....
+
+Dungeon Master is the lastest thrilling game from No Way Out Entertainment. Can you master your way through the darkness to find the hidden treasure you desire. But beware, the next step you take could lead you closer to or farther from your goal. 
+
+### Feature List
+
+The player is first presented with a menu giving instructions on how to
+a) Play the game
+b) Display all high scores
+c) Retrieve the game instructions
+d) Quit the game
+
+Once in the game the player will have the ability to
+a) move left or right
+b) jump left, right or straight up
+
+The game also uses the player's move choices to determine the configuration of rooms the player will have to traverse until the treasure is reached. 
+
+The dungeon is made up of the following object types:
+
+Floor "-" and Wall "|": These objects make up the boundaries of a game. No object may pass through them.
+
+Empty ' ': These objects represent free space that other moving objects may move to. 
+
+Player "R": A movable object representing the player of the game. If there is no floor present, the player will continue to fall until it reaches a Boundary object. 
+
+Enemies: A moveable object that kills the player when contact is made. Enemies move in one direction according to their movement pattern until they make contact with a Boundary object. Once contact is made they reverse direction. There are two types of enemies:
+	
+	Bat "v": Move in a V-pattern and do not need to be in contact with the floor.
+
+	Zombie "&": Move until they come in contact with a Wall or Floor. Must be in contact with the Floor or else they will continue to fall.
+
+Treasure "@": Once the player makes contact with the treasure, the game is won.
+

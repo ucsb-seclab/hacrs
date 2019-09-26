@@ -1,0 +1,14 @@
+## Description
+
+This is an AIS message parser/decoder for the AIS Lite protocol(TM). The connecting client provides a proprerly structured AIS Lite sentence, and the service returns the English textual meaning of the encoded AIS Lite message.
+
+AIS Lite is a protocol roughly based on NMEA 0183. When we say roughly based, we mean that we've refined it to remove all of the cruft that is not related to AIS messages. Additionally, we've removed all of the AIS messaging components that are rarely or never used.
+
+To avoid concerns about this protocol being to similar to the actual NMEA sentence structure or AIS messages structure, we've taken the original NMEA/AIS protocols and altered their formats. So, the sentences used by this CB are not valid NMEA sentences and the encoded AIS messages are not valid AIS messages as decided by a standards-based NMEA/AIS protocol parsers.
+
+### Feature List
+
+This service supports 3 AIS messages types (1, 4, 5). These are the most common, so we decided to ignore all others.
+
+Message types 1 and 4 are transported in a single sentence, so they will receive the English translation as an immediate response. Message type 5 requires 2 sentences to transport it, so the first message will recieve a notification that it received a partial AIS message. The second sentence, will result in the English translation being returned.
+

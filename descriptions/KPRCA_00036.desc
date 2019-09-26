@@ -1,0 +1,14 @@
+## Description
+
+TextSearch is a simple service that allows a user to input a large amount of text and search for lines that have matching strings. The user can enter a block of printable text and a search string or search pattern and discover what lines of the text match. 
+
+### Feature List
+
+The text searching capability either allows partial or exact matching. The user may turn on partial line matching which will return a line if it matches any part of the search string. Exact matching which will only return a line when the entire line matches the search string.
+
+The search algorithm is inspired by Ken Thompson's 1968 paper on matching using NFAs (Nondeterministic Finite Automaton) and DFAs (Deterministic Finite Automaton). It uses a shunting yard algorithm to convert the pattern from infix to postfix, and then proceeds to convert the pattern into a series of connected states. 
+
+The approach builds a not quite NFA a not quite DFA, but stores the transitions from state to state as a directed graph. Epsilon transitions (no character input) are a special transition that enables operators like * and ? to function properly. 
+
+Each operator has a very specifically designed digraph that enables the proper state transtion to occur. These digraphs were built in order to accommodate all the operators as well as be attached to new states. These are stored in the **state_t** strucuture with either a left or right path (**t1, t2**).
+

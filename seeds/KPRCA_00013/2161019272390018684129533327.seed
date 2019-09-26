@@ -1,0 +1,18 @@
+show table
+2+2
+2 add 2
+show a1
+min
+min 2 4 5 3 8
+2 4 5 7 min
+2 5 4 6
+clear a2
+clear a3
+a1=3
+a2=4
+a1+a2
+a1+a2=
+min a1 a2
+min a1
+a1/a2
+a1/a2=

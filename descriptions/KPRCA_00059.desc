@@ -1,0 +1,18 @@
+## Description
+
+A simple service that receives sensor readings, verifies them, and reports back the latest aggregated reading. 
+
+### Feature List
+
+Three types of sensor inputs:
+
+ * Location (3-dimensions)
+ * RPM (revolutions per minute)
+ * Speed
+
+Customizable absolute bounds on the inputs to filter out bad inputs. Additionally, change in location is checked against the limits on speed.
+
+Every packet is timestamped. Timestamps are used for ordering and calculating speed from location. If a packet arrives out-of-order, either it will be dropped or the preceding packet will be dropped.
+
+A sensor can send a reset packet if the system is out-of-sync and the state needs to be cleared.
+

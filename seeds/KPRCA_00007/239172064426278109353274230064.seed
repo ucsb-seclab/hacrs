@@ -1,0 +1,36 @@
+list server
+ping 127.0.0.1
+edit 127.0.0.1
+add 192.168.0.1
+show 192.168.0.1
+//192.168.0.1
+ping 192.168.0.1
+add google.com
+query ip
+show ip
+show mac
+255:255:255:0
+[A
+what
+mode
+set normal mode
+set mode
+get mode
+show mode
+list modes
+hop
+add mode special
+delete mode
+edit mode
+set mode special
+dir
+list ifr
+list modes
+list mode
+get dir
+show all ips
+run query
+2+2
+help
+cd
+quit

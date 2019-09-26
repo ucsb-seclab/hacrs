@@ -1,0 +1,11 @@
+list
+show ip route
+ping
+chmod
+127.0.0.1
+add
+delete
+edit
+mask
+home
+quit

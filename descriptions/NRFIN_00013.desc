@@ -1,0 +1,30 @@
+## Description
+
+This is the Noob High-Precision Calculation Contraption (NoHiC) brought to you by Discount Cyber Cloud Big Data Corp.
+
+This contraption is designed to perform various mathematical operations on lists of numbers. The lists can contain either all integers or all double precision floating point numbers.
+
+### Feature List
+
+The client provides to the contraption a list of numbers and the type of those numbers (signed integer or double precision float). Once the list of numbers is loaded into the contraption, it stands ready to perform various mathematical operations on that list of numbers.
+
+The following are the various operations offered:
+* Average/Mean - The average of the numbers in the list.
+* Median - The median of the numbers in the sorted list.
+* Mode - The list of numbers that occur most frequently (one or more).
+* Range - The difference between the maximum and minimum numbers in the list.
+* Sum - The sum of the numbers in the list.
+* Product - The product of the numbers in the list.
+* Minimum - The minimum number in the list.
+* Maximum - The maximum number in the list.
+* Sort - The list sorted ascending.
+* Reverse Sort - The list sorted descending.
+* Odds - The odd numbers in the list.
+* Evens - The even numbers in the list.
+
+The math operations all use algorithms as would be written by a student in an introductory programming course. Thus, they offer high-precision, ultra-efficiency, and thorough data verification.
+
+The Odds and Evens operations include a bit of fairy dust freshly delivered by Oz himself, which allows the client to perform those operations on floating point numbers. It's AMAZING!
+
+Lastly, performing the equality operation on floating point numbers is fraught with problems. And to make matters worse, in this case, one number is computed in C (CB) and the second number is computed in Python (Poller/Pov). There are many test cases where the least significant digit is different. So, to make the polling work, we ignore the least significant byte in all floating point numbers that are created as the result of a calculation.
+

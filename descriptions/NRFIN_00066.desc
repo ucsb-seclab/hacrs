@@ -1,0 +1,12 @@
+## Description
+
+OUTLAW provides ACaaS (Authenticated Compute as a Service).  The CB set implements a vulnerability similar to the TLS CRIME vulnerability by exposing a shared secret via a compression-like side channel.  An additional memory corruption vulnerability can be exercised by authenticated clients (or an authenticated MitM).  
+
+The CB set is composed of 3 CBs: (1) a CLIENT that issues requests to the SERVER, (2) the SERVER that responds to CLIENT requests, (3) a TAP, which speaks to the CRS and provides active MitM functionality to the CRS in the context of the CGC framework.
+
+First, the CLIENT (CB1) and the SERVER (CB2) speak directly to one another and come to agreement on (1) the encryption key (enckey) used to protect the authentication key, (2) the authentication key (auth_token) used to authenticate SERVER responses to CLIENT queries as well as expose authenticated functionality to the CLIENT.
+
+After this negotiation, the emulated active MitM vantage point is installed; CLIENT and SERVER speak only through TAP.  The TAP forwards all messages to the CRS, which is free to modify, drop, or forward the messages by sending a response to the TAP.  The TAP then forwards the message to the appropriate destination.  
+
+The TAP architecture is intended to simulate an attacker that achieves active MitM following an exchange of secrets.  It should be noted, however, that even if the CRS was an active MitM during the secret negotiation phase, the secrets would not be directly revealed anyway as they require flag page knowledge.  The transition to TAP is provided as a means to demand additional reasoning on behalf of the CRS in line with what may happen in the real world.
+

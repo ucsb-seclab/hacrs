@@ -1,0 +1,18 @@
+## Description
+
+Secure Compression uses Burrows-Wheeler Transform (BWT) and Move-to-Front (MTF) algorithms to compress a given data. It uses 95 byte key from a user, which specifies the ordering of the alphabet (data) which changes the output of the BWT and MTF -- and decompresses to a meaningful data only when the correct ordering (key) is given.
+
+After MTF is performed, a simple bit-encoding is done to actually reduce the length of the data. It encodes each byte with the following rule:
+
+- If the byte is greater than 0x0F, emit bit 1 followed by 8 bit representing the byte value (total of 9 bits)
+- If the byte is less than or equal to 0x0F, emit bit 0 followed by 4 bit representing the byte value (total of 5 bits)
+
+### Feature List
+
+
+```
+- Compress
+- Decompress
+- Quit
+```
+

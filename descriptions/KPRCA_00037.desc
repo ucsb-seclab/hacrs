@@ -1,0 +1,19 @@
+## Description
+
+This service prints out the section and symbol information for a given CGC exectuable.
+
+### Feature List
+
+**Features**
+
+- Parses and validates CGC executables
+- Displays section info (name, type, address, offset, and size)
+- Displays symbol info (name, value, size, type, and bind)
+- Output format is similar to what readcgcef utility outputs
+  - It's a lot less strict about the actual contents, however.
+
+**Protocol**
+
+- Input: Raw bytes that represent the CGC executable file, prepended by its size in bytes.
+- Output: Text display showing information about the file (sections and symbols).
+

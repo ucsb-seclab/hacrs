@@ -1,0 +1,16 @@
+## Description
+COLLIDEOSCOPE brings convenient four-function signed 32-bit integer math to your
+fingertips! Now supporting pointer types and variables. Enter in arbitrary
+algebraic expressions and let us do the hard math for you!
+
+### Feature List
+- Parses algebraic expressions containing integer values and common arithmatic
+  functions
+- Create variables consisting of up to 4 lowercase characters for storing past
+  results
+- Convenient workbook functionality by storing past results in a special
+  variable
+- Reference variables by taking and dereferencing pointers
+- Operator precedence and parenthesis supported
+- Supports addition, subtraction, multiplication, division and negation
+

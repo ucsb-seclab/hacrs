@@ -1,0 +1,8 @@
+## Description
+
+This service implements an adventure game where the user has a team of monsters that they use to battle other monsters. Throughout the map, there are trainers to fight and treasures to find, plus a lot of wild battles along the way. The goal is to collect as many monsters as you can and level them until you defeat your enemies.
+
+### Feature List
+
+The game features a 100x50 tile map that is procedurally generated using a random walk, with monsters that scale in difficulty as you move away from the starting location. You can have up to six monsters on your team at any one time, and all of your extra monsters are stored in the bank with can hold up to 99 monsters. As you explore the map, you will eventually find the name changer, who can change the name of any monster on your team. The standard features, such as saving and loading games, are also included.
+

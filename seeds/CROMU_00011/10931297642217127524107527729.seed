@@ -1,0 +1,13 @@
+.h
+setx = l"00010010", setyl
+setx = new, setynew
+setx = new
+setx = l"wth", setyl
+setx = sety
+setx = 1
+setx = 1, sety
+setx = seta-setb
+setx@sety
+setx @ sety
+.p
+.ps <setvar>

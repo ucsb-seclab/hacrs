@@ -1,0 +1,18 @@
+## Description
+
+This service implements a simple protocol that lets the user call a couple 
+functions which implement the root64 and parcour schemes.
+
+The protocol requires the user to authenticate with a token in order to prevent 
+trivial DDOS attacks. The server will generate a random sesson token which the 
+user must pass back to the server in order to authenticate and access the 
+primary functionality.
+
+### Feature List
+
+This is a server that was roughly inspired by the Gopher protocol. It has a few 
+protocol commands that are used to authenticate and set up the environment, and 
+then the user can request pages which will perform computation and print the 
+output. There are three pages: a summary screen showing which pages have been 
+called, a root64 encoder and decoder, and a parcour obfuscator.
+

@@ -1,0 +1,39 @@
+## Description
+
+A command line visual stack-based performant RPN calculator. Leveraging the old
+to build the new. Guaranteed to net a mad series A.
+
+### Feature List
+
+Support for variety of useful operations:
+  
+  - `+`
+  - `-`
+  - `*`
+  - `/`
+  - `!`
+  - `neg`
+  - `abs`
+  - `mod`
+  - `&`
+  - `|`
+  - `^`
+  - `~`
+  - `sum`
+  - `avg`
+  - `dup`
+  - `dupn`
+  - `dupr`
+  - `min`
+  - `max`
+  - `depth`
+  - `drop`
+  - `dropn`
+  - `undo (we keep a history!)`
+  - `ivrt (invert stack, super useful!)`
+  - `shuf (shuffle stack, even more useful!)`
+
+Only signed 32bit integers are currently supported, but our
+rockst^H^H^H^H^H^Hdevelopers are working on 64bit support and maybe even floats
+soon!
+

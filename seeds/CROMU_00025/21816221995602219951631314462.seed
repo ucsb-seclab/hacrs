@@ -1,0 +1,3 @@
+if ( y < miny && y > maxy ) {error}
+SIGSEGV
+\x20

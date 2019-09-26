@@ -1,0 +1,10 @@
+## Description
+
+This service implements a scripting language that is designed for processing text files. The script is executed on every record, where every line in the text file is processed as an independent record. Every record is then parsed into fields automatically according to the current script state.
+
+### Feature List
+
+The only input to the script is the current record. Parsing of the record can be controlled via field seperator and record seperator variables. Output can be either a print statement or a printf with a script provided format string.
+
+The expressions support variable assignment, arithmetic and logical operators, and regular expression matching. The regular expression support is implemented using a variation of the Thompson NFA algorithm, so its run-time is O(nm) as opposed to competing algorithms that have an exponential run-time.
+

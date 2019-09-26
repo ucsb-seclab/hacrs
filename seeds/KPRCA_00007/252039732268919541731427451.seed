@@ -1,0 +1,21 @@
+lookup home
+add 255.255.255.255
+get all
+show lll
+sow all
+dir
+//
+home
+ipv6
+set 127.0.0.1
+show 127.0.0.1
+query all
+which 
+add
+add google.com
+delete home
+delete 127.0.0.1
+adddir
+rmdir
+showall
+quit

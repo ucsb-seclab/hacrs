@@ -1,0 +1,11 @@
+## Description
+
+This is a simple puzzle game where the user is presented with a rectangular board of size 32x32. At the start of the game, the board is littered with 4*n bits (n <= 64) which are set positions. The goal of the game is to clear the board by moving the bits towards the bottom left of the board. When the lower left 2x2 grid is filled with bits, they will disappear. There are only two kinds of movements that are allowed - rotate right or rotate down.
+
+For example the following puzzle (the ... represents a bunch of 0s)
+1100 0000 0000 0000 ...
+... 
+1100 0000 0000 0000 ...
+
+Has the solution: 0D x 31 and 1D x 31 (in any order).
+

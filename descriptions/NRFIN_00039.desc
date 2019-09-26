@@ -1,0 +1,11 @@
+## Description
+Need a quick sorting utility for your massive database of fixed-width records? Use Fables our mythological sorting and reporting tool. There's a moral in their somewhere.
+
+
+### Feature List
+Begin by telling Fables how your data is structured using dummy data separated by delimiters. From there, you can start sending records over to be stored. At any time you can,
+
+a. Generate a Report of all records
+b. Generate a Report of all records that a match one or more fields.
+c. Sort your data alphabetically by any field you choose. 
+

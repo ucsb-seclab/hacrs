@@ -1,0 +1,13 @@
+play Asylum
+list
+vid=[a,b,c]
+list
+remove Asylum;
+remove Asylum 0x42
+login
+exit
+Exit
+stream
+stream Asylum
+add Embargo
+4325

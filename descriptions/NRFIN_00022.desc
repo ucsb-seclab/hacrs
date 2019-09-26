@@ -1,0 +1,21 @@
+## Description
+
+HIGHCOO is the hottest message of the day (MOTD) program on the market. Instead of boring quotes and quips showing up at your login prompts, HIGHCOO honors your intellectual side by providing thoughful and enlightening Haiku.
+
+from within HIGHCOO
+new Haiku every login
+a warm thought engulfs
+
+### Feature List
+
+This service is a message of the day (MOTD) program specifically designed to provide Haiku as the daily message.
+
+It provide functions both to add new Haikus as well as those to query the current Haiku collection.
+
+Valid functions are:
+* add haiku
+* get haiku by id
+* get haiku random
+* get haiku count
+* get list of haiku ids
+

@@ -1,0 +1,26 @@
+<html xmlns="http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2006-07-14/ExternalQuestion.xsd">
+    <head>
+        {{{ header }}}
+    </head>
+    <body>
+    {{{ internal_links }}}
+
+    <script src="/static/internal/showtasklets.js"></script>
+
+	<table id = "tasklets-table" class="table table-striped table-bordered" cellspacing="0" width="100%">
+		<thead>
+		<tr>
+			<th>Program</th>
+			<th>Keywords</th>
+			<th>Amount</th>
+			<th>Type</th>
+		</tr>
+		</thead>
+	</table>
+
+    <script>
+        var tasklets = JSON.parse(unescape("{{tasklets}}"));
+    </script>
+    </body>
+</html>
+

@@ -1,0 +1,11 @@
+## Description
+TVS is a vault service with a time lock. Unless the current time is in the allowed range, users are not able to retrieve items from the vault. At any time, a user is allowed to store new items or list the item IDs that are in the vault. In order to keep the current time accurate, the vault service synchronizes its time with a remote server.
+
+### Feature List
+
+ * Support for up to 500 vault items
+ * Fast O(1) retrieval of vault items
+ * Time and Vault Services are multiplexed for performance
+ * Protection to prevent attackers from changing time
+ * Software attestation via fixed addresses
+

@@ -1,0 +1,22 @@
+## Description
+
+A binary protocol inspired by an internet relay chat service service
+
+### Feature List
+
+The CB proivdes a Client/Server model with the server holding all of the program's state and the client interfacing with the user
+to make requests and receive responses.
+A client may make the following request to the sever:
+    -Register an account
+    -Verify user password
+    -Search for registered accounts
+    -Add a channel
+    -Join other channels
+    -Search for registered channels
+    -Leave a channel
+    -Delete a channel if the user is its creator
+    -Request server tokens, if the user is a remote admin
+    -Exit Client/Server
+The local client also allows a user to switch between accounts via a login/logout
+
+

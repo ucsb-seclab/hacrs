@@ -1,0 +1,15 @@
+## Description
+
+This service is a joint effort from multiple Cromulence developers. It includes a command line interface with a command handler and registered command.
+
+The first command is a sort command and allows the user to enter a number of integers to be sorted. The user then enters each integer one line at a time and the sorted list is printed back to the user.
+
+The second command provides basic addition, subtraction, and scalar multiplication matrix math operations.  Depending on the requested operation, the user is prompted to supply the matrices and/or the scalar multiplier.  The resulting matrix is printed out before returning to the matrix operation menu.
+
+The third command is a game similar to Simon says. The game outputs a sequence of colors and the user must generate a reply sequence that matches. After every correct answer, the sequence grows longer. 
+
+The fourth command is a data encoding function similar to Base64.  Raw data is entered and the resulting encoded data is output.
+### Feature List
+
+This service features an interactive command line, the ability to list commands, and numerous commands. The first command is the sort command which sorts integers entered by the user.  The second command provides basic matrix math operations. The third command is a simon says game. 
+

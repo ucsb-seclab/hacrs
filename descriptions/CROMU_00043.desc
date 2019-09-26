@@ -1,0 +1,25 @@
+## Description
+
+This service is a protocol aware packet analyzer. It analyzes packets in the newly defined DCAP file format and produces text output with varying levels of detail. It can also operate in continuous mode to analyze traffic as it is received. 
+
+### Feature List
+
+The Packet Parser is aware of the following protocols:
+  Physical Layer - Wire, Radio, and Raw 
+  Transport Layer - Stream and Message
+  Network Layer - Endpoint, Broadcast, and Debug
+  Application Layer - Web, Music, Video, Email, and File
+
+Upon first connecting to the service, a header is sent to configure the mode and display parameters. The modes are:
+  File - In file mode a DCAP file is sent, the output is returned, and the session ends.
+  Stream - In stream mode the service continuously receives packets and sends output until a zero length packet is received. 
+
+The display parameters are:
+  Physical - enable/disable display of the physical layer information
+  Transport - enable/disable display of the transport layer information
+  Connection - enable/disable display of the connection information
+  Application - enable/disable display of the content information
+  Statistics - enable/disable display of packet statistics
+
+Multiple positive and negative packet filters can be applied to each session. 
+

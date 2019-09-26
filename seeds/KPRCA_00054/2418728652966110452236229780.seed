@@ -1,0 +1,64 @@
+list
+create 1.txt
+list
+modify 1 0
+modify 1.txt 0
+modify 999 0
+open 1.txt
+close_all
+create 2.txt
+open 1.txt
+open 2.txt
+list
+close 1
+close 2
+close 1
+close 0
+open 1.txt
+read 1 0 0
+read 0 0 0
+read 0 1 1
+read 999 0 0
+read 0 999 999 999
+read 0 -1 -1
+read 0 0 -1
+read -1 0 0
+modify 0 -1
+modify -1 -1
+modify 999 -1
+mod
+modify 0 999
+deneme
+EOF
+close -1
+read 1 1 100
+read 0 1 100
+read 0 0 -4
+read 0 0 x
+read 0 x 1
+read 0 999 100
+read 0 990 10
+modify 0 999
+written over it?
+It should't write on it
+EOF nin de usttune mi
+EOF
+list
+open 2.txt
+modify 1 0 0 0 0
+EOF
+modify 1 1
+first edit
+/EOF
+\EOF
+EOF
+read 1 0
+modify 1 20
+second edit comes to whree?
+EOF
+read 1 0
+modify 1 550
+third edit
+eof
+EOF
+read 1 0

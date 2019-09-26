@@ -1,0 +1,28 @@
+## Description
+
+H20 Flow Inc brings you the hottest technology in programmable logic controllers (PLCs) used in the water distribution industry. We know how important it is for your water distrubition PLCs to do exactly what you tell them to do and nothing more. H2FLOW is our latest generation water flow valve controller.
+
+### Feature List
+
+The H2FLOW CB is a simple flow controller that manages the valves for the fill lines of several water tanks, based on commands provided by the intelligent PLC (the remote user).
+
+Each water tank has a defined capacity. Each tank also has a minimum fill level. If the fill level drops below the minimum fill level, an emergency circuit will activate the backup fill pump until the level returns to the minimum fill level. If the fill level drops below 5 units of volume, a critical fill level alarm is raised.
+
+Each water tank has a random rate that water is flowing out of it (drain rate). This simulates periodic water usage by an end user or device.
+
+There are a fixed number of tanks, their ID numbers are sequential starting from 0, the capacities are defined by the TANK\_CAP value, and initial fill level is defined by the INIT\_LEVEL value.
+
+To simulate time and water flowing in and out of tanks, H2FLOW uses a sleep timer. During the sleep timer, the service is simulating execution of all received commands and the filling/emptying of tanks. 
+
+Between sleep timers, the service will iterate through the tanks. For each tank, it will send the remote user the tank status and then accept a command to apply to the valves for that tank.
+
+During each iteration, the drain and fill functions will remove water from tanks based on a random outflow rate and add water to tanks based on valve position and a fixed inflow rate. Finally, each tank will be tested for under fill.
+
+H2FLOW has a very simple protocol. It accepts the following commands:
+- OPEN\_VALVE           : open fill valve
+- CLOSE\_VALVE          : close fill valve
+- NO\_CHANGE            : no valve changes
+- SET\_IN\_SERVICE      : for a tank that is OUT\_OF\_SERVICE, set the fill rate and allow tank to supply water to users
+- SET\_OUT\_OF\_SERVICE : close input valve, set fill\_rate and drain\_rate to 0
+- SET\_END\_OF\_LIFE    : same as SET\_OUT\_OF\_SERVICE, but is permanant
+

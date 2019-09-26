@@ -1,0 +1,12 @@
+## Description
+
+Card players often spend significant effort memorizing all of the strategies and odds of possible each state of a game. This style of game presents a high bar to entry for those who have problems learning and remembering strategies and odds. For those people, we've created, A Game of Chance.
+
+We simplified the deck to remove face cards and Aces; leaving the cards numbered 2 - 10. We've removed the need and ability to calculate odds, by making every deck into randomly generated collections of the possible valid card numbers. And lastly, we've minimized the need to develop strategies by making it a 2 card game where the bids are placed after the first card is dealt, face up, and the results are calculated after the second card is dealt, face up.
+
+The rules of each round are simple. First, the dealer deals one card face up to each player. Then each player makes a wager. Then the dealer deals the second card face up to each player. The winner is the player that has the highest 2-card sum. If there is a tie for winner, each is considered a winner. The dealer does not play a hand. The players are playing against each other.
+
+Those that win, are given a dollar amount equal to their wager. Those that do not win, lose their wager.
+
+The most common strategy, that all current players use, is to wager 0 if the first card is a 2 or 3, and wager some other amount when the first card is 4 or greater.
+

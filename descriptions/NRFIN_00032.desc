@@ -1,0 +1,26 @@
+## Description
+
+At CableGrind, we make every effort to provide the best\* packet analysis at the lowest price.
+We know that tens of users rely on our software every day, and it is our responsibility to deliver functional software to every customer.
+In our effort to improve our user experience, we pre-installed a third party protocol dissector in our previous release.
+The goal was to improve the dissection experience using their innovative speed enhancements, such as removing bounds checking.
+
+In reality, we had customer complaints about the software (which, as we may have mentioned, is the world's best\*).
+We acted swiftly and decisively once these concerns began to be raised.
+We have thoroughly investigated this dissector and do not find any evidence to substatiate security concerns.
+
+With that said, we would like you to know that those responsible for its authorship have been sacked.
+CABLEGRIND has been rewritten in an entirely different style and at great expense at the last minute.
+
+\* Best as measured by greatest total number of vulnerabilities
+### Feature List
+
+Thanks to our easy-to-use parsing API and strong security precautions, we have quickly become the de-facto standard for analyzing network traffic!
+Our core CableGrind developers are constantly adding new protocols and new datatypes to please both users and dissector contributors.
+Because of our committment to new development, we now support over 500 different protocols, and are always open for more.
+And you can feel safe using CableGrind, because our unique stack verification ensures vulnerabilities won't be exploitable!
+Upload your DUPE (Dissector Upload Packet Encapsulation) to our demo server today and give it a try!
+
+This release completely removes all previously supported protocols and adds entirely new ones.
+It also utilizes state-of-the-art heap hardening techniques in non-performance critical paths, preventing heap overflows and discouraging moose bites.
+

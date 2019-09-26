@@ -1,0 +1,46 @@
+<html xmlns="http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2006-07-14/ExternalQuestion.xsd">
+    <head>
+        {{{ header }}}
+    </head>
+
+    <body>
+
+<p>
+
+<h1>
+User: {{ username }}
+</h1>
+
+<form id='pickform'>
+
+
+
+    <div class="form-group">
+        <label for="difficulty">Difficulty</label>
+
+        <select class="form-control" id="difficulty" name="difficulty">
+            <option value="easy" selected>Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="type">Task Type:</label>
+        <select class="form-control" name="type">
+            <option value="SEED" selected>Seeding</option>
+        </select>
+    </div>
+
+
+    <button id="submitbtn" type="button" class="btn btn-default">Proceed</button>
+</form>
+
+<script>
+var username = "{{ username }}";
+</script>
+
+<script src="/static/tasklets_picker.js"></script>
+
+
+</html>

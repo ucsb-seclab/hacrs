@@ -1,0 +1,12 @@
+## Description
+
+A secure authentication service with an extensible protocol that can support multiple authentication methods and multiple upper layer services.
+
+### Feature List
+
+Full support for the cleartext password authentication method; user can change password using a change request.
+
+Timing attack resistance to prevent exposure of usernames and passwords.
+
+Packets are padded to 8-byte boundaries with random data to make it easier to implement on top of a secure channel in the future.
+

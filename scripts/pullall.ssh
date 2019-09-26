@@ -1,0 +1,5 @@
+#!/bin/bash -x
+
+ssh mw@cgc-4 -A git -C cyborg/cyborg pull
+ssh prod@cgc-4 -A git -C cyborg/cyborg pull
+ssh yans@cgc-4 -A git -C cyborg pull

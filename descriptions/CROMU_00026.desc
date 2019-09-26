@@ -1,0 +1,8 @@
+## Description
+
+This service is an fictional implementation of a radio receiver after demodulation. The service reads in raw data bits, acquires preamble lock, bit/byte synchronization and begins decoding packets and rendering them as they are received to stdout.
+
+### Feature List
+
+The service features preamble locking (0101010101 or 1010101010 sequence), bit/byte synchronization using 16-bits to acquire byte pattern lock, and checksums for packet integrity checking. Packets support 32-bit and 16-bit checksums as well as fragmentation. Fragmentation is optional and up to 16 fragments can be assembled into a full message packet. Fragmentation uses a fragmentation list to assemble packets with the same sequence numbers into a completed message. After reassembly a message is rendered using a combination of text markup (underline, bold, italics) and formatting characters (tabstop, break, paragraph, and newline) to standard output.
+

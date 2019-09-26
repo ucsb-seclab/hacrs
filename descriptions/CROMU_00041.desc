@@ -1,0 +1,20 @@
+## Description
+This service is a reimagining of CROMU_00001: A messaging service that allows the user to create, send, and receive messages.
+
+
+### Feature List
+This service represents a messaging service. User's can create users, log in, log out, create messages, send messages, view inbox, view all messages, and view drafts.
+
+Upon connection, the CRS is presented with a login menu where it can create a user, log in, or exit.
+
+After successfully connecting as a user, the CRS is presented with more options:
+Create Message
+Send Message
+View all messages
+View drafts
+View inbox
+Logout
+Exit
+
+A message is created and put into drafts. Once sent, it is removed from drafts and put in the appropriate user's inbox. During each login session, the CRS may only create four messages, but they may have up to 20 messages total. 
+

@@ -1,0 +1,12 @@
+## Description
+
+The hottest new thing in the beverage industry is the vending machine with a touch screen that lets a customer mix and match their favorite beverages into one drink.
+
+What we are bringing to the table is the same hotness, but for breakfast cereal. Cereal Mixup is a breakfast cereal vending machine controller board. This magical board accepts the mix choices from the touch screen and directs the internal machinery to fill the user's bowl with the desired contents.
+
+But, wait, this gets even more exciting!! We also provide an API over wifi, so you can use our unpatentable smartphone app to make your super yummy breakfast mixture selections from the palm of your clammy hand.
+
+The poller/pov/CRS play the role of the touch screen and Wifi API that are sending commands to this controller.
+
+The vulnerabilities in this CB simulate some of the most common object serialization bugs found in Java.
+

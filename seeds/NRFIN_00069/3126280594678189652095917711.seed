@@ -1,0 +1,9 @@
+move (8, 2)
+(0, -3)
+move (0, -3)
+left
+move right
+<help>
+[list]
+run 
+(7, 9)

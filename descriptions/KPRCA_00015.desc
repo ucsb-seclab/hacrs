@@ -1,0 +1,8 @@
+## Description
+
+This service implements the MULTIPASS PROTOCOL, which is a binary protocol for multi-use RFID payment cards. Every issued card has an ID and auth code which is used to authenticate the card for future operations. Auth codes are generated using an ultra secure algorithm that is not patent pending.
+
+### Feature List
+
+The service implements basic functionality such as card balance and reloading, purchases, and refunds, plus issuing new cards and reporting transaction history. All operations are atomic and recorded in a secure transaction log. 
+

@@ -1,0 +1,12 @@
+## Description
+
+This service creates an interface in which someone can play an awesome game where the player avoids lasers coming downwards, 
+while shooting lasers themself back up at the enemy. Sending a newline steps the game forward. If no key has been pressed when
+the newline is sent, the ship will fire. Otherwise, w = move up, d = move right, a = move left, s = move down. 
+
+### Feature List
+
+When the game starts, the user inputs their name and is greeted into the game as the General they will become. The game then proceeds
+until either the enemies reach the bottom (lose), the player is hit by an enemy laser (lose) or all the enemies are eliminated (win). 
+If the player wins, they are then entered into a "Dance Mode" for celebration.  
+

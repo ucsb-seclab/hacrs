@@ -1,0 +1,21 @@
+find sugar
+login
+logout
+login
+run command
+find command
+add (lastname == "Will")
+find (lastname == "Will")
+(find lastname == "Will")
+(Lastname == "Will")
+Lastname == "Will"
+lastname == Will
+Try Will
+Search Will
+Find Uncle
+Find Tom
+Add Tom
+Add "Tom"
+Add firstname == Tom
+add firstname == "Tom"
+add (firstname == "Tom")

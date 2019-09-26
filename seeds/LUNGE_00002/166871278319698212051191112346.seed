@@ -1,0 +1,12 @@
+hi
+search A
+search Programming
+search CRS
+search *
+get 22
+get 23 11
+get 2
+get |23|11|
+register 23 Hi
+ch_sec |A|++|
+ch_sec |\n

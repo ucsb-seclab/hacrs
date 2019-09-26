@@ -1,0 +1,8 @@
+## Description
+
+The program is an application to collect food recipes and allow for searching for wanted recipes by title and ingredient.  Individual recipes can be tagged for later printing.  In addition, the ingredients from recipes that have been tagged can be combined into a sorted shopping list. 
+
+### Feature List
+
+New recipes can't be added.  Recipes can also be searched for by keyword including the use of wildcards that search the recipe title and ingredient list.  For example, all recipes that use artichoke hearts could be found and tagged.  A list of tagged recipes can be printed to STDOUT to create a menu for a dinner and finally a shopping list of the ingredients used in tagged recipes can be printed.
+

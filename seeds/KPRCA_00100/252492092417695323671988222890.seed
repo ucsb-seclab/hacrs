@@ -1,0 +1,11 @@
+create a/b
+link a
+unlnk b
+list
+run
+catalog
+seek
+close
+open
+write 5
+quit

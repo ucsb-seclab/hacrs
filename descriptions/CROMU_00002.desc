@@ -1,0 +1,8 @@
+## Description
+
+This service implements a simple particle physics simulator. The service utilizes double precision floating point arithmetic and attempts to simulate collisions within a simulation grid. The simulation runs over 10 seconds and calculates the resultant final locations of the particles and attempts to render them to the screen in an ASCII render grid. Output information also consists of the number of collisions that occurred during the simulation and the number of frames that the simulation ran.
+
+### Feature List
+
+A particle physics simulator that utilizes double precision floating point math and runs for 10 seconds with a simulation grid.
+

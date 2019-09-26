@@ -1,0 +1,23 @@
+
+1
+2
+3
+4
+z
+w
+New Note
+I want to send a letter
+# new-note
+A
+$NAME
+* new-note $NAME $CONTENT
+new-note $NAME $CONTENT
+append-note $NAME $CONTENT
+GET-NOTE $NAME
+get-note $NAME
+delete-note $NAME
+get-note $NAME
+get-note $NAME
+get-bote RNAME
+new-note $MINNIE $KITTY CAT
+get-note $MINNIE

@@ -1,0 +1,13 @@
+## Description
+
+This service implements a parser and pretty printer for a Type-Length-Value
+protocol known as ASL6. ASL6 is commonly used amongst retro online-chat
+enthusiasts who desire an easy to exchange basic information about themselves
+to eachother such as age,gender,or geographic location.
+
+### Feature List
+
+This service simply reads a ASL6 element up to 32KB in size and pretty prints
+its contents back the the user. It is able to handle a variety of complex
+datetypes such as time and object identifiers.
+

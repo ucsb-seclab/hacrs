@@ -1,0 +1,33 @@
+## Description
+
+This is a content server patterned very loosely after an HTTP web server. It supports a custom markup and scripting language and serves all output as printable ASCII. 
+
+### Feature List
+The ASCII Content Server responds to these commands:
+ 
+  REQUEST - retrieves a page from the server
+  QUERY - prints the page tree hierarchy on the server
+  SEND - upload a new page to the server
+  REMOVE - delete a page from the server
+  VISUALIZE - process the given page data as ASCII Markup and serve it back
+  INTERACT - retrieves a page from the server while overriding the given variables 
+
+The server starts with a default set of pages that exercise the available functionality including a markup language and scripting. 
+
+ASCII Markup Language:
+  ~ is the escape character
+  ~t insert tab
+  ~n insert newline
+  ~[ insert left bracket
+  ~] insert right bracket
+  ~~ insert tilde
+  ~# insert hash
+  #variable# insert value of variable
+  [] are script tags. 
+Script actions are:
+  var - set a variable
+  box - put page data inside an ASCII text box
+  line - draw a line of given length
+
+The server supports variables within the page data. Variables can be set via a script or through the data portion of an INTERACT command. Variables can be retrieved by using the #varname# syntax within the page data. Variables set via the INTERACT command will override any variables present in the page data. The server stores all pages on the heap in a tree structure.
+

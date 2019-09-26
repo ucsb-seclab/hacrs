@@ -1,0 +1,18 @@
+criminal at (12, -1)
+Criminal at (6, 6)
+Criminal at (6, -1)
+criminal at (12, -1)
+forward
+left
+left (12, -1)
+stop
+go
+right
+left
+criminal
+where
+user at (7, -1)
+City
+Harbor
+forward 45
+forward

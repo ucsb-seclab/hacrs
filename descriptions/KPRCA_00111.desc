@@ -1,0 +1,22 @@
+## Description
+
+An IPC server + 2 clients implementation of a social media service where users can 'blub' messages to a list of subscribers.
+
+### Feature List
+
+To first connect, users enter an username that will uniquely identify them to
+the blubber service and other blubbers.
+
+Users can blub a message of up to 140 characters with the 'b' command.
+
+Users can subscribe to another blubber with the 's' command.
+
+Users can read new blubs from other blubbers with the 'r' command.
+
+Users can reblub another blubber's blub with the 'y' command.
+
+Users can exit the blubber service with 'e' command.
+
+In addition, there are two IPC clients present with this CB that pseudo
+randomly interact with the blubber service. It wouldn't be social otherwise.
+

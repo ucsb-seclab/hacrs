@@ -1,0 +1,41 @@
+## Description
+
+3M is a program that allows users to manage their memos. It provides a very simple
+interface with minimal yet useful features: create, modify, view, and delete. It supports auto-correction of misspelled words, where the user can specify custom corrections. In order to make the program more efficient, the latest version of the software uses threads!
+
+### Feature List
+
+- **Create a memo**
+  - Prompts to fill in the following fields: subject, date, priority, and body.
+  - Before it is added to the system, the validation on the input is done.
+    - Must be valid year (1970-2500), month (1-12), and date (1-31).
+    - Subject must not be longer than 32 alphanumeric characters.
+    - Priority must be 0 (Low), 1 (Normal), or 2 (High).
+    - Body must not be longer than 4096 bytes.
+  - Displays the memo ID when successfully created.
+- **Update a memo**
+  - Prompts for the memo ID.
+  - Prompts to fill in the same fields as "create a memo" menu.
+    - However, the user can leave the field empty to keep and use the original data.
+  - Validation happens:
+    - Memo ID must be valid (i.e. should be in the system)
+    - Field validation (same as the memo creation)
+  - Displays the memo ID when successfully update
+- **View a memo**
+  - Prompts for the memo ID.
+  - Memo ID must be valid (i.e. should be in the system)
+  - Displays in a nice format
+- **Delete a memo**
+  - Prompts for the memo ID.
+  - Memo ID must be valid (i.e. should be in the system)
+  - Removes the memo with the memo ID.
+- **Add a custom auto-correction word**
+  - Prompts for the misspelled word.
+  - Prompts for the correct word.
+  - Adds the correction (misspelled->correct mapping) to the system
+    - Each word must not be longer than 32 characters
+    - The maximum number of correction entries is 100 (20 is pre-populated)
+- **Quit**
+  - Quits the program.
+
+

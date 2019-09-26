@@ -1,0 +1,22 @@
+## Description
+
+This service implements a toolkit for a custom 3D image format.  The format consists of a sequence of bytes that make up the X, Y, Z coordinates and the Red (R), Green (G), Blue (B), and Alpha (A) color values for each pixel in the image.
+
+There are commands available to the user that alter the 3DC image data within the service that allow the image to be manipulated in a multitude of ways.
+
+### Feature List
+
+The user can access the following commands:
+
+ - Create a new file from user-provided data
+ - View the data for every pixel in the image at once
+ - View the data for a single user-selected pixel
+ - Skew the X, Y, or Z coordinates of the pixels by a user-provided value
+ - Rotate the entire image about the X, Y, or Z axis by a user-provided degree value
+ - Scale the entire image by a user-provided value
+ - Alter the brightness of the image by a user-provided value
+ - Change the opacity of the image by a user-provided value
+ - Compress the image by turning the RGB color values for each pixel into an 8-bit representation
+ - Decompress the compressed image data back into the active image data, not without losing color data due to the compression
+ - Exit the toolkit
+

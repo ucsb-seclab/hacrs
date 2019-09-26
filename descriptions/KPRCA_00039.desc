@@ -1,0 +1,20 @@
+## Description
+
+This service provides the user with a way to play a game against a simple AI.
+The user begins by entering their name and the game begins.  The user then
+inputs coordinates on a game board and if their move is valid a stone of their
+team color is placed on the board. The AI then performs a move and the game
+continues like this until one player runs out of stones of a maximum number of
+moves has occurred.
+
+### Feature List
+
+The user is presented with a visual printout of the state of the game as the
+game progresses which include board state, team scores, and how many game ticks
+have occurred. If the user attempts an invalid move the game is not drawn but
+instead they are simply prompted for a new move. The rules of the game are
+quite simple. An user can only place a stone on an empty point on the board.
+A stone is captured if it can not be connected to a stone of its same color.
+Score is a combination of captures and stones on the board. When the game
+terminates the user is notified whether they were a winner or a loser.
+

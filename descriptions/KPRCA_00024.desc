@@ -1,0 +1,8 @@
+## Description
+
+This service implements a simple commerce site that allows users to buy and sell products. The service utilizes a database service that serves as the backend. The protocol between the two servers is a form of RPC. The RPC code was mostly generated automatically from a specification file.
+
+### Feature List
+
+The basic features are: list products, buy a product, and sell a new product. A product has an inventory count and a price. Products are identified by their name which is a standard null-terminated string. The backend database is based on a self-balancing binary search tree, which guarantees good performance.
+

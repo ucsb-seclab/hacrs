@@ -1,0 +1,18 @@
+## Description
+Headscratch is an esoteric programming. Writing in headscratch is very tedious,
+results in obscenely verbose programs, and will leave most programmers scrating
+their heads out of confusion and frustration. This challenge binary implements
+a headscratch interpreter.
+
+### Feature List
+  Headscratch supports the following statements.
+  
+   * \> Increment the data pointer.
+   * _ Decrement the data pointer.
+   * \+ Increment the value at the data pointer.
+   * \- Decrement the value at the data pointer.
+   * [  Go to matching ] if the value at the data pointer is zero.
+   * ]  Go to matching [ if the value at the data pointer is not zero.
+   * . Output the value at the data pointer.
+   * , Read a value in and store it at the data pointer.
+

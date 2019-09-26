@@ -1,0 +1,9 @@
+## Description
+
+This service is another implementation of the vector graphics processor from CROMU_00018. An input file is received and parsed into a file data structure. Next it is rendered into an output buffer and written out to pixel map file in RGB 24-bit color format. This service supports drawing lines, circles, triangles, and rectangles. Two new shapes have been added to this implementation, square and spray. 
+
+### Feature List
+
+This service features the ability to render lines, triangles, circles, rectangles, squares, and spray in any color on multiple layers. The layers are combined into a final render layer. The input format for the service is a binary file known as a VGF (Vector Graphics Format) file that contains the information for rendering the objects to the pixel map file. Upon any error conditions the service terminates. Memory allocation is handled by heap allocations using malloc/free.
+
+

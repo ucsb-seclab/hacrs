@@ -1,0 +1,29 @@
+## Description
+CVE-2014-0160, commonly known as Heartbleed, was one of the first uber-famous vulnerabilities to receive its own name, dedicated website, and even a logo. Although it was a straightforward memory disclosure in OpenSSL, its effect was complex and far reaching. Its discovery in 2014 called into question the security and privacy of over 60% of encrypted Internet traffic over the past few years. Recovery from Heartbleed not only required patching the software like any other typical vulnerability but also required revocation of compromised keys, reissuing of keys and certificates, and changing of all user passwords. It is interesting to note that the Heartbleed vulnerability was originally detected by an automated testing system, Defensics by Codenomicon. 
+
+This service recreates an openssl style server utilizing a made up transport layer called (Some Layer Security) (SLS) inspired by Transport Layer Security (TLS).  On top of that, the server implements a Message-based SLS protocol (MSLS). Since the heartbleed vulnerability was in the heartbeat message of a TLS session, this server implements a heartbeat style message as part of the MSLS protocol. 
+
+### Feature List
+This service accepts messages of several types:
+  Handshake, Error, Changespec, Application, Heartbeat, and Shutdown. 
+The handshake protocol is similar to a TLS handshake and contains the following exchange:
+  Client Hello -> 
+  <- Hello Verify
+  Client Hello (w/cookie) ->
+  <- Server Hello
+  <- Server Key Exchange
+  <- Hello Done
+  Client Key Exchange ->
+  Hello Done ->
+  <- Finished
+  Finished ->
+
+Once a handshake is complete a connection is established and future data is sent within that protected connection. All 'encryption' is a simple xor based algorithm using the exchanged keys. 
+
+Once a secure connection is established, this service provides access to a message board. Application messages can be sent within the encrypted connection of the following types: 
+  APPLICATION_LIST_BOARD - List the number of messages
+  APPLICATION_POST_MESSAGE - Post a new message
+  APPLICATION_DELETE_MESSAGE - Delete a message
+  APPLICATION_CLEAR_BOARD - Clear the entire board
+  APPLICATION_READ_MESSAGE - Read a particular message
+

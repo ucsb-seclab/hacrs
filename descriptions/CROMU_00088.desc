@@ -1,0 +1,8 @@
+## Description
+
+This service is a social media server where users can post messages for others to view and comments on.
+
+### Feature List
+This service is a social media server that provides a network protocol for new accounts to be created, message posts to be made, comments to those posts and a posting feed where the user can retrieve postings that she hasn't previously seen.  Specific posts can be retrieved by their posting ID and all associated comments are also displayed.  A filesystem is used for the underlying storage mechanism for the server with each user having an account file that maintains their state information as well as their real/full name.
+
+

@@ -1,0 +1,7 @@
+## Description
+
+Confident Authentication Terminal (CAT) provides real time RAM access for
+remote auditors.  CAT is a client for a fictional CAT protocol designed for use
+in regulation-heavy industries, such as the gaming industry, where regulatory
+bodies need to be able to query RAM contents on demand.
+

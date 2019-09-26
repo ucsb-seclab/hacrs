@@ -1,0 +1,19 @@
+## Description
+
+Bloomy Sunday is a safety feature that filters any blacklisted depressing words
+in submitted lyrics. To make it more responsive, it implements a bloom filter
+to quickly test if the word is not in the blacklist, in which case, doesn't get
+banned.
+
+### Feature List
+
+**Features**
+
+- Submit lyrics
+  - Check against the filter (automatic)
+- View lyrics
+
+**Protocol**
+
+- User-interactive interface
+

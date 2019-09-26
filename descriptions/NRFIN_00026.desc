@@ -1,0 +1,9 @@
+## Description
+
+CableGrind is a full-featured packet parser, ideal for all your packet dissection needs! Choose CableGrind, and you'll be tearing packets apart in no time.
+
+### Feature List
+
+Thanks to our easy-to-use parsing API and strong security precautions, we have quickly become the de-facto standard for analyzing network traffic! Our core CableGrind developers are constantly adding new protocols and new datatypes to please both users and dissector contributors. Because of our committment to new development, we now support over 500 different protocols, and are always open for more. And you can feel safe using CableGrind, because our unique stack verification ensures vulnerabilities won't be exploitable! Upload your DUPE (Dissector Upload Packet Encapsulation) to our demo server today and give it a try!
+
+

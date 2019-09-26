@@ -1,0 +1,17 @@
+a=|"cat","dog"|
+b=|"rat","cow","duck"|
+c=b+|"another rat"|
+c=b^"another rat"
+c=b^|"another rat"|
+c=|"another rat"|
+c=b^|"mouse"|
+.ps c
+c=b+|"mouse"|
+.ps c,b
+.ps c+b
+.p
+d = a~c
+.ps d
+d@a
+a@d
+a@d+b

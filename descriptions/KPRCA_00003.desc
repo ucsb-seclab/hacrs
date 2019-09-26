@@ -1,0 +1,13 @@
+## Description
+
+This service implements a basic impage compressor with a bitmap file as the 
+input and an ACGC file as the output. The format of the ACGC output is similar
+to JPEG format. The huffman tables are static which reduces compression
+slightly. The user can specify the encoding quality in one of the reserved
+fields in the bitmap header. 
+
+### Feature List
+
+A working ACGC encoder implementation featuring adjustable quality and using 
+fixed-point arithmetic to speed up the discrete cosine tranformations. 
+

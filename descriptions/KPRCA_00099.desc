@@ -1,0 +1,15 @@
+## Description
+
+House price suggestion / prediction service using cutting-edge neural network machine learning algorithm.
+
+### Feature List
+
+Given a sufficient training data set, the service can suggest a reasonable price for the house. The user can query with the following features:
+
+  - Number of bedrooms
+  - Number of bathrooms
+  - Sq. Ft. of the house
+  - Number of crimes per town
+
+The size of training data set can be between 500 and 1000, for the time being.
+

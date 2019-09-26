@@ -1,0 +1,34 @@
+2000
+september
+9
+11
+14
+55
+55
+1
+set
+get 1
+add 1
+delete
+delete file
+help
+help set
+help get
+help add
+help delete
+help ls
+help cat
+cat
+cat 1
+cd
+cd 1
+list
+ls
+set 1
+set 5
+delete 1
+delete user
+1
+perm
+filebytes
+help

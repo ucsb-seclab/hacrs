@@ -1,0 +1,69 @@
+$ 
+racoiaws
+0
+8.8.8.8
+$ 
+-1
+0.0.0.0
+help
+?
+enable
+enable racoiaws
+add
+delete
+query
+add 8.8.8.8 255.255.255.0 172.0.0.1
+google
+0.1.0.0
+DELETE
+delete
+delete 8.8.8.8
+query 8.8.8.8
+add router1
+add 8.8.8.8
+cc
+8.8.8.8
+list
+edit 8.8.8.8
+fadf
+6.6.6.6
+query 6.6.6.6
+query 8
+query fadf
+list
+query AS 8
+query 0.0.0.0
+add
+add hello
+add 5
+c
+c
+add 5 8.8.8.8
+add 5
+add 4
+etho_1
+127.0.0.24
+add 66532
+add 4
+add 2
+f
+43535
+list
+add -1
+add 55
+4
+4
+add 56
+a
+a
+add 553
+-1
+-10.
+list
+edit 553
+a
+sd
+query 553
+add 8756
+0
+255.255.255.192

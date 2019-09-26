@@ -1,0 +1,20 @@
+## Description
+
+This is a service for greeting customers. It stores a user's credentials
+client-side, tracking their identity and a reference to their profile which is
+stored server side. Client-side tokens are signed to prevent tampering by the
+user. It responds to the following commands:
+
+ - login <name>, returns a token
+ - greet <token>, returns a welcome message
+ - quit, quits the program without returning a status
+
+Login and greet both return 0 on success and -1 on failure, represented as a
+32-bit hexadecimal 2's complement number printed on its own line.
+
+### Feature List
+
+- Multiple verification methods using different cryptographic algorithms
+- Per-user profiles tracking unique visits
+- 16-byte usernames
+

@@ -1,0 +1,10 @@
+## Description
+CGC Board is a service that allows the user to play a board game against a computer opponent. It uses sophisticated techniques, such as brute force and pruning, to provide a challenging yet fun game. Its protocol is similar to other board game protocols and is text-based making it easy to integrate with other software, such as a GUI.
+
+### Feature List
+
+ * Bitboard-based internal representation
+ * Configurable search depth
+ * Quiescent search up to depth 16
+ * Support for random play
+

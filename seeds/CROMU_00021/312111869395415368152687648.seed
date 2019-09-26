@@ -1,0 +1,6 @@
+=true
+1=true
+one=true
+If(One)=true
+("1")
+if("1")=true

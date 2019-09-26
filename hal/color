@@ -1,0 +1,10 @@
+#!/usr/bin/env python
+
+import os
+import termcolor
+
+while True:
+	i = os.read(0, 1024)
+	if not i:
+		break
+	os.write(1, termcolor.colored(i, "cyan"))

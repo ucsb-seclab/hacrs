@@ -1,0 +1,28 @@
+## Description
+
+This program is a small blogging site. It allows users to create content, add friends, and like posts. 
+Once a user has accumlulated enough friends, and likes, he or she is upgraded to a full user and may
+upload files to the blog post.
+
+### Feature List
+
+Unregistered users may:
+1. Register
+2. Log in
+3. View a user's posts
+4. View a user's profile
+5. Quit
+
+And once registered a user can add content, friends, or remove his or her content.
+1. Add new blog post
+2. Delete blog post
+3. Update profile
+4. Add a friend
+5. View my friends
+6. Unfriend someone
+7. View my posts
+8. View my profile
+9. View a user's posts
+10. View a user's profi
+11. Log out.
+

@@ -1,0 +1,8 @@
+create mankind
+read mankind
+lseek mankind
+write mankind this is where it begins
+read mankind
+unlink mankind
+close mankind
+quit

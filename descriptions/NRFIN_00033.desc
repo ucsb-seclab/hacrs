@@ -1,0 +1,9 @@
+## Description
+
+Our Single-Sign-On (SSO) solution will allow users to authenticate once in order to access any corporate web service.
+
+
+### Feature List
+
+Users will first send a request for a given resource. If the user already has a token for the resource, the resource is returned. If not, the user will be required to re-authenticate and obtain a new token for the resource. Once the user is done using the resource, they may send a revocation message to revoke the token for the resource. Once the user is done using all resources they can log out and end their session.
+

@@ -1,0 +1,8 @@
+## Description
+
+This service implements a command line shell-like interface to an underlying filesystem--providing highlevel commands that encapsulate the lower level API calls of the filesystem.
+
+### Feature List
+The filesystem supports "regular" files, and files mapped to a malloc'ed memory region.  Commands are provided to create these files, read and write to them, copy them, and finally to erase them.  In addition, the filesystem supports file ownership and "others" permissions so that access to individual files can be restricted or shared as the file owner desires.  When started, the shell presents with a login prompt that uses data from the magic page for authentication information.  However, the shell does allow for "guest" access using a built-in account with hardcoded credentials.
+
+

@@ -1,0 +1,18 @@
+## Description
+A simple chess game featuring a state-of-the-art text interface and local
+multiplayer support, enabling players to make moves using human-readable
+standard algebraic notation to play a game of chess.
+
+### Feature List
+This service will allow two players to play a game of chess
+
+- Displays game state based on current player
+- Parses input in standard algebraic notation
+- Handles move validation
+- Tracks captures
+- Tracks check, checkmate, stalemate
+- Handles castling
+- Handles pawn promotion
+- Handles en passant
+- Future support for AI players planned
+

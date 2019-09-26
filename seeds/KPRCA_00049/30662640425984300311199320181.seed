@@ -1,0 +1,33 @@
+new-note @frnk
+new-note £poo
+new-note $nigel GREAT
+delete-note @frnk
+Delete-Note £poo
+delete-note £Poo
+new-note jeremy sfaf aega alh afkljsnd ae fwefalk kwenmf awef %30
+append-note $nigel %20 
+append-note $nigel jeremy
+append-note Gnigel
+append-note $nigel Gnick
+append note $nigel "how about  this?"
+new-note "fred" "astaire"
+get-note fred
+get-note "Fred"
+get-note "fred"
+append-note "fred" LIFT
+append-note "fred" 'what about these'
+delete-note "fred"
+delete-note $nigel jeremy
+list-notes
+get-notes
+help
+.h
+commands
+%10
+append-note %20 Yorick
+GET-$NOTE
+NEW-NOTE $FRED
+new-note $FRED
+append-note $FRED %variable
+append-note $Fred
+append-note $FRED "what about this?" or not ending quotes'

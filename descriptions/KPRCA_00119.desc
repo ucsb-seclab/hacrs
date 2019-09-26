@@ -1,0 +1,16 @@
+## Description
+
+A custom language interpreter implementing a simple calculator service. The service lets a user insert and retrieve numbers, perform arithmetic on the numbers, and access a RNG.
+
+### Feature List
+
+While the service is very simple, the language it is implemented in is very featureful. The language includes support for dynamic types, arrays, while loops, conditionals, scoping, and procedures. The library can be easily extended by adding additional external functions written in C, or by creating whole new types similiar to the current array support.
+
+Current library functions:
+
+ - chr
+ - ord
+ - rand
+ - read
+ - echo
+

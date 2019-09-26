@@ -1,0 +1,9 @@
+#!/usr/bin/env python
+
+import os
+
+while True:
+	i = os.read(0, 1024)
+	if not i:
+		break
+	os.write(1, '<span class="program_output">%s</span>' % i.replace("\n", "<br>").replace(' ', '&nbsp;'))

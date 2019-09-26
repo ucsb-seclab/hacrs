@@ -1,0 +1,78 @@
+## Description
+
+This is the power testing module that was missing from the Griswold's decorative light display design software.
+
+This module takes the electrical components of the decorative light display design, models the loads, and checks for hazardous situations. All hazardous situations are reported back to the design software, so that it can present indications and warnings to the designer.
+
+If you have seen the movie National Lampoon's Christmas Vacation, you know who the Griswold's are and the epic importance of a power testing application for decorative lighting displays. If you have not seen the movie, you are missing out on a classic!
+
+### Feature List
+
+The module operates on a client/server model. The client is the design software and the server is the power testing module.
+
+The client provides to the server the electrical elements of the design and how they are connected together. The electrical elements are:
+- load center
+    + 100 amp 8 spaces
+    + 100 amp 16 spaces
+    + 100 amp 20 spaces
+    + 150 amp 20 spaces
+    + 150 amp 24 spaces
+    + 150 amp 30 spaces
+    + 200 amp 20 spaces
+    + 200 amp 30 spaces
+    + 200 amp 40 spaces
+    + 200 amp 42 spaces
+    + 400 amp 20 spaces
+    + 400 amp 30 spaces
+    + 400 amp 40 spaces
+    + 400 amp 42 spaces
+- circuit breakers (single pole, 1 circuit)
+    + 15 amp breaker
+    + 20 amp breaker
+- electrical outlets (each having 2 receptacles)
+    + 15 amp outlet
+    + 20 amp outlet
+- n-way power splitters (each supporting 15 amps total and 15 amps per receptacle)
+    + 3-way splitter
+    + 6-way splitter
+    + 8-way splitter
+- light strings (residential with 22 gauge wire)
+    + M5 bulb style, 100 incandescent bulbs, 40.8W
+    + C9 bulb style, 25 incandescent bulbs, 120W
+    + C7 bulb style, 25 incandescent bulbs, 165.6W
+    + C6 bulb style, 150 LED bulbs, 12W
+
+
+All of the electrical elements are powered by a single 120V residential electric service. All of the circuit breakers are loaded into a single electric load center. Each outlet has 2 receptacles and is associated with a specific circuit breaker. Each n-way power splitter has n receptacles and is associated with a receptacle on a specific electrical outlet or light string. Each light string is associated with a single receptacle on either an electrical outlet or a n-way power splitter.
+
+The server uses the client's input to build a model of the electrical connectivity and loading.
+
+The server is then able to process queries from the client to look for hazardous situations. Those hazard situations are as follows:
+- overloaded electrical panel
+    + too much total load (>100% amp rating)
+- overloaded breaker(s)
+    + too many outlets (>8 on 15 amp, >10 on 20 amp)
+    + too much load (>80% amp rating)
+- overloaded electrical outlet(s)
+    + too much total load (>80% amp rating)
+    + too much load on one receptacle (>80% amp rating)
+- overloaded power splitter(s)
+    + too much total load (>80% amp rating)
+    + too much load on one receptacle (>80% amp rating)
+- overloaded light string(s)
+    + too much load (>210W including that string and all downstream)
+
+This tool does not support checking for excess current through the in-home wiring, which is a major fire hazard. It is assumed that the circuit breakers are properly sized to protect the in-home wiring. It also assumes that the only loads on the electrical panel are light strings.
+
+Electrical rules of thumb:
+* Breaker should trip on sustained draw of >80% amp rating
+* Max 8 outlets per 15 amp breaker
+* Max 10 outlets per 20 amp breaker
+* Avg 1.5 amp load per outlet used to define max outlets per breaker.
+* Max 210W on 22 gauge wire (residential light strings)
+* Max 420W on 20 gauge wire (commercial light strings)
+
+Power equation:
+* Amps = Watts / Volts 
+
+

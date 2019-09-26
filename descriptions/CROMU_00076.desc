@@ -1,0 +1,100 @@
+## Description
+
+This challenge allows a user to travel across a map fighting and capturing monsters.
+
+### Feature List
+
+When a user first connects they are prompted to enter a name. A blank response gives them the default "Player One".
+
+Three monsters are generated with hit points between 4 and 9 and power between 2 and 5. Example output of this step is:
+
+Name: Player One
+Level: 1
+Monsters:
+	Type: Gamma Guardian
+	Health: 9
+	Power: 6
+
+	Type: Wrathran Palpur
+	Health: 12
+	Power: 7
+
+	Type: Angry Neutron
+	Health: 12
+	Power: 3
+
+
+A map is then generated with height and width between 5 and 30. The player and boss are randomly placed at a starting position. The player is indicated by '@' and the boss is indicated by the 'X'. Following these two placements the map is then filled with obstacles. During the filling process it is always ensured that a path exists between the player and the boss using a breadth first searching algorithm.
+
+Once the map is generated the player is prompted with ': '. Here they are able to enter a movement, either (u)p, (d)own, (l)eft, or (r)ight. If an obstacle is in their way they will receive an error. If they enter a character that is not u, d, l, or r then they will get an error. Otherwise the player will move to the indicated location. Here is an example prompt:
+
+..##.#
+.....#
+#.....
+#.#@.#
+#.##..
+#.#..#
+......
+......
+.#....
+..#.##
+.#.##.
+......
+.#....
+..#..#
+......
+X.....
+: 
+
+After each move there is a random chance that the user will encounter a monster. If this occurs the following will be displayed:
+
+You are being attacked!!!
+	Type: Rough Wizard
+	Level: 1
+	Health: 5
+	Hit Points: 5
+	Power: 7
+
+Monsters:
+	1}
+	Type: Gamma Guardian
+	Level: 1
+	Health: 9
+	Power: 6
+
+	2}
+	Type: Wrathran Palpur
+	Level: 1
+	Health: 12
+	Power: 7
+
+	3}
+	Type: Angry Neutron
+	Level: 1
+	Health: 12
+	Power: 3
+
+Selection:
+
+The player will be informed of the attack and the atacking monster's information along with all of the player's monsters' information will be displayed. The player is expected to select a valid entry corresponding to the monster with which they wish to attack. The monster will hit for a value between 0 and their power level.
+
+After the selection hit value and the remaining health of the attacking monster will be displayed. If the monster is not knocked out then it will also attack the defending player's monster. If the defending monster's hitpoints is less than or equal to 0 then it can no longer be used to attack. If all defending monsters are less than or equal to 0 then the player loses the battle.
+
+Selection: 1
+You hit for 2. 3 left
+Rough Wizard hits Gamma Guardian for 4
+Monsters:
+	1}
+	Type: Gamma Guardian
+	Level: 1
+	Health: 5
+	Power: 6
+
+	2}
+	Type: Wrathran Palpur
+	Level: 1
+	Health: 12
+	Power: 7
+
+	3}
+	Type: Angry Neutron

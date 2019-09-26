@@ -1,0 +1,8 @@
+## Description
+
+This service represents a device that implements a human-interface device protocol over a session protocol that is responsible for muxing, fragmentation and reassembly. It is similar to a different protocol known as Bluetooth, but definitely is not Bluetooth. There are three layers of protocols which makes the system very extensible and flexible. 
+
+### Feature List
+
+The bottom layer is designed to interface with a radio and has a fixed packet length that should support speeds up to 723 kb/s. The middle layer supports packet sizes up to 64KB and will fragment them as necessary before sending to the bottom layer. Additionally, the middle layer has support for 65471 dynamic channels that can be created and destroyed as needed, with fixed addresses to multiplex between several applications. The only application that is implemented in this device represents a simple RID, with random data generated rather than human data.
+

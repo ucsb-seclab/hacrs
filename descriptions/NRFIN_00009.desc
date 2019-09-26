@@ -1,0 +1,8 @@
+## Description
+
+This service is a Music Store Client looking for a Music Store Server to purchase songs from. The client sends a gift card ID to obtain a balance from the Music Store. The client then begins searching the Music Store by artist, album, or song title. Once a list of songs that match the search critiria is returned, The Music Store Client selects a song to purchase. The Music Store Client continues searching and purchasing songs until the balance is zero. 
+
+### Feature List
+
+The client begins the session by providing the server with the gift card id in order to receive a starting balance. The client then queries the server for all songs up to a requested limit whose artist, album, or song matches a term. The client selects a song from the list returned by the server and requests to purchase it. The client continues to purchase songs until the blanance is below the minimum price for a song.
+

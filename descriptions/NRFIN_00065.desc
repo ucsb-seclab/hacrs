@@ -1,0 +1,22 @@
+## Description
+Game Night is a collection of games providing fun for the whole family! Play the
+hottest new video games from our library, managing all your games in one place.
+Stretch your vocabulary with Hugman, learn new tactics with Chess, practice
+logic with Sudoku, chug along with Gallon Challenge, feel the thrill of the hunt
+with Safari Zone, take a chance with Chance of Survival, and top it off with a
+quick game of Lesson in Futility!
+
+### Feature List
+This service is a collection of text-based games providing easy access and
+replayability from a central interface.
+
+- Supports the following games:
+    * Hugman
+    * Chess
+    * Sudoku
+    * Gallon Challenge
+    * Safari Zone
+    * Chance of Survival
+    * Lesson in Futility
+- Memory-efficient data structure to minimize system requirements
+

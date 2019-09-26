@@ -1,0 +1,19 @@
+help
+show
+show c:
+dir
+echo
+echo try
+hello
+fsinfo
+dump
+delete
+show
+show /
+delfolder
+show /
+show %
+?
+mkfolder c
+show c
+delfolder c

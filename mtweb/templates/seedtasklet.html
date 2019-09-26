@@ -1,0 +1,138 @@
+<html xmlns="http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2006-07-14/ExternalQuestion.xsd">
+    <head>
+        {{{ header }}}
+    </head>
+
+
+    <body>
+    <script>
+        var IframeURL = "///" + document.location.hostname + ':{{vrport}}?passwd={{password}}&showinput={{showinput}}';
+        var assignmentID = "{{assignment_id}}";
+        var worker_id  = "{{worker_id}}";
+        var hit_id = "{{ hit_id }}";
+        var tasklet_id = "{{ tasklet_id}}";
+        var program_name = "{{ programname }}";
+        var seeds = "{{ seeds }}";
+        var tasktype = "{{ tasktype }}";
+        var difficulty = "{{ difficulty }}";
+        var amazon_host = "{{ amazon_host }}";
+
+    </script>
+    <script src="/static/tasklets.js"></script>
+    <script src="/static/levelup.js"></script>
+    <script src="/static/slider.js"></script>
+    <link rel="stylesheet" href="/static/levelup.css">
+    <link rel="stylesheet" href="/static/show.css">
+
+    <section class="container" id="DataCollection">
+
+    <div class="row">
+        <div class="col-xs-12 col-md-12">
+            <div class="panel panel-primary"><a class="panel-heading" href="javascript:void(0);" id="ProgramcollapseTrigger"><strong>Program Usage Instructions</strong> <span class="collapse-text">(Click to collapse)</span> </a>
+                <div class="panel-body" id="PrograminstructionBody" >
+                    <pre>{{programinstructions}}
+                    </pre>
+                    Click the bar above to collapse the description and proceed to the program.
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-xs-12 col-md-12">
+            <div class="panel panel-primary"><a class="panel-heading" href="javascript:void(0);" id="SeedcollapseTrigger"><strong>Program Sample Usage</strong> <span class="collapse-text">(Click to collapse)</span> </a>
+                <div class="panel-body" id="SeedinstructionBody" >
+
+<p class="sliderlinks">See interaction: <span id="sliderlinks-standard"></span></p>
+<p id="sliderdisplay-standard">Click a number to show that interaction!</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h3>{{ taskname }}</h3>
+        <div class="leftbox">
+		<div class="functionbox">
+
+			<div>Total functions: <span id="transitions">0</span></div>
+			<div>Triggered by previous HITs: <span id="prevtransitions">0</span></div>
+			<!--div>Goal for this HIT: <span id="targettransitions">0</span></div-->
+			<div>Triggered in this HIT: <span id="foundtransitions">0</span></div>
+			<div><span id="payoutmsg">Remaining to payout:</span> <span id="nextfunctions">0</span> functions</div>
+		</div>
+		<div class="payoutbox">
+			<div><span id="currpayoutvaluemsg">Current HIT payout:</span> <span id="currpayoutvalue">0</span></div>
+			<div><span id="payoutvaluemsg">Next target payout:</span> <span id="payoutvalue">0</span></div>
+			<div><b><span id="payoutdone"></span></b></div>
+		</div>
+
+
+		<div class="clickbox">
+			<form action="{{ amazon_host }}" method="POST" id="resultform">
+				<input type="hidden" id="assignmentId" value="{{ assignment_id }}" name="assignmentId"/>
+				<input type="hidden" id="fooooo" value="bar" name="foo"/>
+				<br/>
+				<input type="hidden" id="workerId" value="{{ worker_id }}" name="workerId"/>
+				<input type="hidden" id="hitId" value="{{ hit_id }}" name="hitId"/>
+				<!--input type="submit"-->
+				<input type="submit" id="submitButton" class="btn btn-primary" value="Submit" />
+			</form>
+            <div>
+			<button id="resetVM" class="btn btn-warning" onclick=resetvm()>Reset VM (Previous Work will be considered)</button>
+            </div>
+            <div>
+			<button id="abortTasklet" class="btn btn-danger" onclick=aborttasklet()>Try a Different Program (if this one is too hard)</button>
+            </div>
+			</div>
+		</div>
+
+        <div class="rightbox">
+            <iframe id="loadframe" src= "/novnc_loading" width=50% height=400 border=10>
+            </iframe>
+            <iframe id="viewframe" src=""  width=20 height=20 style="display: none;">
+            </iframe>
+        </div>
+
+        <div class="row">
+        <div class="col-xs-12 col-md-12">
+            <div class="panel panel-primary">
+                <a class="panel-heading" href="javascript:void(0);" id="NotescollapseTrigger">
+                <strong>Notes on the Program</strong>
+                <span class="collapse-text">(Click to collapse)</span> </a>
+                <div class="panel-body" id="NotesinstructionBody" >
+
+
+<p>
+<span id="notesdisplay-placeholder">
+No notes found
+</span>
+
+<dl id='noteslist'>
+</dl>
+
+<form id = "sendnotes">
+<div class="form-group">
+<div>
+	<label for="note">Add Note</label>
+</div>
+<div>
+	<textarea id="notesdata"></textarea>
+</div>
+	<button id="notessubmitbtn" type="button" class="btn btn-default" onclick="return false;">Submit</button>
+</div>
+</form>
+
+</p>
+
+                    Click the bar above to collapse the notes and proceed to the program.
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+        </section>
+    </body>
+</html>

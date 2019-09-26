@@ -1,0 +1,33 @@
+## Description
+
+This service performs Least Significant Bit (LSB) steganography on a PKK file. It supports two modes: embed and extract. The user can provide a PKK image and the secret text to be hidden in the image with a specific format, or provide a PKK image that has hidden message inside to extract the message. The program expects a specific format (encapsulation) for an input.
+
+### Feature List
+
+This service supports the following features:
+
+  1. **Embed a secret message**
+  2. **Extract the hidden message**
+
+The service accepts an input of the following format:
+
+  - STEG_TAG (4 byte)
+  - Total size (4 byte) [includes STEG_TAG]
+  - PKK file size (4 byte) == N
+  - PKK file data (N byte)
+  - MODE_TAG (4 byte)
+  - mode (2 byte)
+  - TEXT_TAG (4 byte)
+  - text data size (2 byte) == M
+  - text data (M byte)
+  - END_TAG (4 byte)
+
+In case the input is for the *extract* mode, the text data size should be 0 and text data should be an empty string.
+
+When the secret message is embedded into the image, it is first encapsulated into a special format:
+
+  - SECRET_TAG (4 byte)
+  - original (extracted) text data size (2 byte) == M
+  - text data (M byte)
+  - SECRET_END_TAG (4 byte)
+

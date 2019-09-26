@@ -1,0 +1,21 @@
+## Description
+
+Welcome to the Multi-Arena Pursuit Simulator. This tool will train you how to make the precision moves that lead to the successful capture of a fleeing criminal everytime. Though be careful. Just a single bad move, and your criminal could be gone for good. In this simulation you will pursue criminals in both an urban and nautical setting.
+
+Each of the simulations will begin with providing the user the starting location of the criminal on one of two arenas. The user will then provide the simulators a list of valid moves that will either lead to the capture of the criminal or of their successful evasion. Due to the technical advantages of the user's vehicles, the user is allowed to move two units per turn, while the criminal only moves one unit per turn. If the user reaches a position at or adjacent to that of the criminal, the criminal is "caught." If the criminal reaches a position where evasion will always be possible, the criminal "gets away".
+
+Successful completion of the simulator requires 100 successful captures in a row in both the City and Harbor arenas. 
+
+### Feature List
+
+### City Chase
+* The map is a square grid. 
+* The user must obey all traffic signals, which will permit only Forward and Right moves.
+* The criminal is able to move in any of four directions or stay where they are.
+
+### Harbor Chase
+* The map is triangular lattice.
+* The user's watercraft restricts movement to only Forward movements. Therefore, Left and Right movements are only 45-degrees of Forward.
+* The criminal is able to move in any of six directions or stay where they are.
+
+

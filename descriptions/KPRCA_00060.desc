@@ -1,0 +1,16 @@
+## Description
+
+Simple Printer Protocol. The service acts like a printer service, but obviously doesn't really print things. All of data are parsed, but most of them are left unused -- except for few fields used in queue state report.
+
+### Feature List
+
+
+```
+- Print jobs
+- Receive print jobs
+- Manage print jobs (via control files)
+- See queue state
+- Remove jobs
+```
+
+

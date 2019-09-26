@@ -1,0 +1,3 @@
+automated:
+
+AFL_CORES=4 DRILLER_CORES=2 HUMAN_INPUTS=no FORCE_INTERVAL=0 TIMEOUT=$((8*3600)) ./parallel_bins.sh ./run_shellphuzz.sh

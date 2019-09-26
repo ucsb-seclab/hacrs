@@ -1,0 +1,100 @@
+## Description
+The user has the ability to upload images formatted in one of five custom formats. They can also list, remove, or display the rendered images.
+The purpose was to challenge them with non-eight bit aligned bitwise manipulation as well as management of user derived and user influenced data.
+
+### Feature List
+Tag Based Image Renderer (TBIR)
+
+Header
+32 bit magic 0xb0c4df76
+
+16 bit header start: 0xaaaa
+8 bit width with a max of 128
+8 bit height with a max of 128
+
+16 bit flag field: 0xaabb
+4 bits pixel type:
+	0001 - 1 bit for a ' ' or a '.'
+	0010 - 2 bits for a ' ', '#', '*', '@'
+	0110 - 6 bits for a ' a-zA-Z0-9'
+	0111 - 7 bits for ascii 0x20-0x7e 0 indexed
+4 bits load direction
+	0000 Start top row left to right then continue down
+	0001 Start top row right to left then continue down
+	0010 Start bottom row left to right then continue up
+	0011 Start bottom row right to left then continue up
+	0100 Start left column top down then continue right
+	0101 Start right column top down then continue left
+	0110 Start left column bottom up then continue right
+	0111 Start right column bottom up then continue left
+
+16 bit pixel start field: 0xaacc
+	width * height * ([1|2|6|7]) 
+	aligned to 32 bit
+
+16 bit checksum field: 0xaadd
+	32 bit xor checksum
+
+16 bit end of file: 0xaaee
+************************************************************************
+
+Total Pixel AsciiBased Image (TPAI)
+Each pixel must have a value. The ordering is specified via flags
+
+Image Header
+32 bit magic 0xcb590f31
+6 bit Width
+6 bit Height
+3 bit pixel load direction
+	000 Start top row left to right then continue down
+	001 Start top row right to left then continue down
+	010 Start bottom row left to right then continue up
+	011 Start bottom row right to left then continue up
+	100 Start left column top down then continue right
+	101 Start right column top down then continue left
+	110 Start left column bottom up then continue right
+	111 Start right column bottom up then continue left
+17 bit Reserved
+
+Width * Height Pixels
+7 bit Ascii value
+
+The pixel array must be 16 bit aligned.
+
+16 bit xor checksum of all data including the header.
+
+************************************************************************
+Fixed Point AsciiBased Image (FPAI)
+Each pixel is relative to the 0,0 (origin) point
+Each pixel can be any ascii value
+
+Image Header
+32 bit MAGIC 0x55d9b6de
+6 bit X axis
+6 bit Y axis
+3 bit axis type (origin location)
+16 bit pixel checksum (Checksum by adding all the 16-bit values)
+	Checksum only covers the pixel data
+
+1 bit reserved.
+	Should be 0
+
+Pixel:
+7 bit X value
+7 bit Y value
+7 bit Pixel Value ' ' - '~' 0 based 
+
+Image is padded to 8 bits
+
+************************************************************************
+Fixed Point TextBased Image (FPTI)
+Each pixel is relative to the 0,0 point as opposed to the previous pixel with RPTI
+Each pixel will be represented by a '.','*','#', or '+' based upon the header flag
+
+Image Header
+32 bit MAGIC 0x24c7ee85
+6 bits X axis total length (unsigned)
+	0 is an error condition
+	Max of 63
+6 bits Y axis total length (unsigned)
+	0 is an error condition

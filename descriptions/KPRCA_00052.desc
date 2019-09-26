@@ -1,0 +1,21 @@
+## Description
+
+This application is a pizza ordering system. It is deisnged to help employees 
+at a restaurant track order requests.
+
+### Feature List
+
+The service allows an employee to input an order into the tracking system. To prove that
+a user is trusted he or she must first authenticate into the system. Once Authenticated the user may:
+
+1. Input Order
+    Allows an employee to input an order, add toppings to a pizza, remove a pizza from an order
+2. Update Order
+    Remove and add new pizzas to an order
+3. View One Orders
+4. View All Orders
+5. Delete Order
+6. Clear All Orders
+7. Logout
+
+

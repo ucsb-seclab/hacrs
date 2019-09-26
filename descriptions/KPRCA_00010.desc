@@ -1,0 +1,26 @@
+## Description
+
+This servcie implements a PCM audio visualizer. It is limited to uncompressed PCM 
+audio files, 8 or 16 bits per sample, 1 or 2 channels, and 8000, 11025, 16000, 
+22050, 32000, 44100, or 48000 samples per second. 
+
+The visualizer displays the audio in both the time domain, or by running an FFT 
+(fast fourier transform) on the data and visualizing it in the frequency domain. 
+
+### Feature List:
+
+The visualizer initially has 2 options, load a file or quit. Once a valid file is 
+loaded into the system the service exposes 9 options for a user to execute.
+  
+1. Load a new file - removes the current file from memory and loads a new file
+2. Wave Visualizer - displays the raw bytes for an audio file. Turns out this looks
+                     like a wave.
+3. EQ Visualizer - displays graph of frequency by relative percentages (bar graph form)
+                   per second
+4. Power Visualizer - Displays average power usage per second
+5. Enable Low Pass Filter - Filters out the top 1/3 frequencies with the EQ Vis
+6. Enable High Pass Filter - Filters out the bottom 1/3 frequencies with the EQ Vis
+7. Disable Filter
+8. Set visualization speed - slows down the speed of the visualization for human viewing
+9. Quit
+

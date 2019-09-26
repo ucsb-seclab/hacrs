@@ -1,0 +1,20 @@
+## Description
+
+A fitness tracker that allows different types of fitness sensors to attach, detach, input data, and list sensors.
+
+### Feature List
+
+Users may register with the system, request a list of acceptable register types, register sensors, and input data for each sesnsor.
+
+During initialization, the system reads from the magic page to populate the hardware IDs for each type of sensor (Heart, Step, Bike, Scale, Run). These IDs must be the first byte in each sensor's MAC address during initial sensor registration.
+
+Each sensor can be added, removed, and send data for each user. Each user 'owns' the sensors connected to their profile. The sensor manager can also list all attached sensors for all users.
+
+Register User - Register a user
+Change to User - Change to a registed user
+Register Sensor - Register a sensor with a valid hardware ID
+Send Sensor Data - Send sensor data to a registered sensor
+Request Sensors - Request a list of all sensors (by sensor ID and MAC address) registered to the system
+Remove Sensor - Remove a sensor (by sensor ID) from the system
+Request Hardware IDs - Return a list of each sensor's HW ID
+

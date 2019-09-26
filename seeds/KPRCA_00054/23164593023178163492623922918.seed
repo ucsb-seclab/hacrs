@@ -1,0 +1,11 @@
+create
+create butt
+list 
+modify butt
+modify 0
+delete butt
+create test
+open test
+close_all
+help
+quit

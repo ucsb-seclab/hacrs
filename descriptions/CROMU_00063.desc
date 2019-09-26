@@ -1,0 +1,23 @@
+## Description
+This service implements a Local Area Network emulating basic switching and routing functions.  The Layer 2 protocol is similar to Ethernet v2 with 802.1q VLAN tagging support.  The Layer 3 protocol is similar to IPv4.  And the Layer 4 protocol is similar to UDP.  
+
+The network functions are broken up into three challenge binaries.  cb_1 (switching) implements the Layer 2 functions and connects to the CRS using stdin and stdout where it expects to receive properly formatted L2/L3/L4 packets.  It then uses IPC to talk to the cb_2 (routing) binary and the cb_3 (server) binary.  The cb_2 binary implements the Layer 3 functions and routes between the subnet of the CRS and the subnet of the cb_3 binary.  The cb_3 binary implements several services which are accessible via different Layer 4 ports.
+
+The Layer 2 protocol utilizes 2-byte source and destination addresses along with a 1-byte virtual LAN tag which is used on the "link" between the switch and router to differentiate traffic in the two subnets. It also provides a 4-byte checksum.  The maximum frame size is 255 bytes.
+
+The Layer 3 protocol utilizes 4-byte source and destination addresses.  There are two subnets defined in the cb_2 binary.  Each uses a 24-bit mask which makes the first three bytes of the address the network and the last byte the host portion of the address.  The subnet addresses and router addresses are statically configured in the binary.  So, it's up to the CRS to determine a usable address on its subnet for communicating with the router and the other subnet.  In order to map between Layer 3 and Layer 2 addresses, the service uses an "Addresss Discovery Protocol" which allows a host on the network to broadcast an ADP packet asking for the correct Layer 2 address for a given Layer 3 address.  This is similar to the Address Resolution Protocol used in Ethernet/IP.  
+
+The Layer 4 protocol utilizes 1-byte source and destination ports.  Being similar to UDP, it is a connectionless protocol.  The cb_3 challenge binary implements three network services.  On port 7, there is a simple echo service which sends back any data bytes received from a particular client.  On port 19, there is a character generation service which sends a random number of random bytes back to any client which sends a packet to the service.  On port 129, there is a password generation service which creates six random passwords each using ten "syllables" selected randomly from a preconfigured list.
+
+### Feature List
+This CB set implements the following protocols:
+Layer 2 network protocol with VLAN support
+Layer 3 network protocol with 32-bit address space and variable length subnetting
+Layer 4 network protocol with support for up to 256 independent services
+
+Server CB provides three network services: echo, chargen, and a password generator.
+
+The routing CB provides layer 3 routing between two subnets one housing the CRS and the other housing the server CB.
+
+The switching CB supports VLAN trunking, L2 address learning and broadcast packet forwarding.
+

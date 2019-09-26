@@ -1,0 +1,19 @@
+## Description
+
+Secure Registers Inc. is releasing their automated credential registration service, REJISTAR. Recent breaches have demonstrated the impact of stolen credentials. Only through regular and immediate re-credentialing can this impact be reduced. Unfortunately, most credential registration is performed manually, which is slow and error-prone. 
+
+Not any more. With REJISTAR an end point can automatically register or re-register any credential, including certificates and tokens. Now when a vulnerability in a secure communication protocol exposes the integrity of your credentials, immediate re-credentialing a real possibility.
+
+### Feature List
+
+- Certificates
+-- Enroll a new certificate with user-defined expiration
+-- Re-enroll an expiring certificate
+-- Revoke a certificate
+-- Request the current Certificate Revocation List
+
+- Tokens
+-- Request a new token
+-- Refresh an expiring token
+-- Revoke a token
+

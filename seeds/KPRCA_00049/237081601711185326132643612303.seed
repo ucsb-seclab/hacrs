@@ -1,0 +1,33 @@
+new-note Egg Jimmy
+get-note Egg
+append-note Egg has
+get-note Egg
+new-note Egg Jimmy
+delete-note Egg
+new-note Jimmy has a little dog.
+get-note Jimmy
+new-note Egg Jimmy
+get-note Egg
+get-note Jimmy
+append-note Egg has a
+get-note Egg
+append-note Egg little cat.
+get-note Egg
+H
+M
+S
+delete-note Egg
+delete-note Jimmy
+new-note A A
+get-note A
+new-note A B
+new-note B B
+append-note A B
+get-note A
+append-note A CDEFGHI
+get-note A
+delete-note A
+delete-note B
+E
+exit
+end

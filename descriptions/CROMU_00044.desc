@@ -1,0 +1,8 @@
+## Description
+
+This service is a reimplementation of the service CROMU_00001 specification with additional functionality added including an admin login, admin console, admin and user passwords, and written using C++ classes.
+
+### Feature List
+
+This service features an an initial menu that allows a user to login, a new user to be created, or an administrator to login to administrator console. The service allows users to send messages to each other from there user menu after logging in. New messages that are received are marked as unread and when a user attempts to read their messages they first are prompted with any unread messages. The administrator console allows an admin after proper authentication to list all users, delete a user, or change their password.
+

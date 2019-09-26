@@ -1,0 +1,8 @@
+## Description
+
+This service is a GPS Package Tracking Device simulation. The tracking device implements Geofencing alerts and allows the receiver to track the location of the package. All commands are sent via a custom binary protocol to the device.
+
+### Feature List
+
+The GPS Package Tracking device supports geo fencing by sending it a list of geofence coordinates and a radius for each coordinate. When the devices position is outside the allowed distance for one of these coordinates the device will alert the receiver with a response packet and the coordinate and distance the device is from that geo fenced position. A special debug mode allows the receiver to command and set various parameters of the tracking device and is used by the poller to test the geofencing capability of the device. In addition multiple additional modes are supported including sleep/wake commands, info command which provides information about the tracking device, position command for retrieving current position, and a shutdown command for shutting off the device.
+

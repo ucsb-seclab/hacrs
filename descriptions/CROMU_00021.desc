@@ -1,0 +1,10 @@
+## Description
+
+This is a challenge which implements a simple integer calculator.  It supports variables, and has a number of built-in functions, some of which are arithmetic and some of which aren't.  It also supports booleans and strings, and some functions on those datatypes.
+
+### Feature List
+
+This is a multi-function calculator.  It supports addition, subtraction, multiplication, division, modulus, length, type, int casts, and equality checks on integers, strings, and booleans.
+
+It allows for some pseudo-intelligent operations to occur on different datatypes.  For example, adding a string and an integer will cast the integer to a string, and concatenate the two.  Adding a integer and a string will not add, because I didn't think that made as much sense.
+

@@ -1,0 +1,6 @@
+## Description
+This service implements an emulator of a game system. The user sends a cartridge data which is run by the emulator. The user can send commands to simulate input controls or to quit the emulator. Several times per second the emulator will send the current screen of the game system to the user as ASCII art.
+
+### Feature List
+The emulator supports basic I/O, interrupts, timers, and many types of instructions. The emulated ISA is a variation of the Z80, which features variable-length instructions, 8-bit and 16-bit registers, and a 16-bit address space. Capabilities include a 1 MIPS (million instructions per second) CPU, 32KB of ROM, 8KB of RAM, and 8 digital inputs.
+

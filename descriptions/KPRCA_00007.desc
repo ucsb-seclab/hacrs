@@ -1,0 +1,8 @@
+## Description
+
+This service implements a simple text-based protocol that mimics the basic functionality of a router interface. The user is provided with the ability to setup routes and routers, and ask which router should be the next hop for a specific IP. The router information is stored in an array indexed by its 16-bit ASN; and the route information is stored in a trie for faster lookups.
+
+### Feature List
+
+The server has two modes: normal and enable. In normal mode, the user is able to add, delete, and query routes; and in enable mode, the user can add, delete, edit, and list routers. The enable mode is protected by an ultra-secure password to prevent malicious access to router controls. With the route query command, the user can find out which router should be the next-hop for the given destination IP.
+

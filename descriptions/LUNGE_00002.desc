@@ -1,0 +1,5 @@
+## Description
+
+This service implements a FAR section lookup service, including a niave
+compression, dynamic skip searching, and prefix tree searching for commands.
+

@@ -1,0 +1,21 @@
+new-note
+save-content
+$save$new
+new-note
+delete-note
+save-note
+find-note
+$name
+new-note $name$content
+append note
+append-note $name
+delete-note
+delete-nore $name
+delete-note $name
+new-note $find
+note-discard
+1
+note-move
+move-note
+print-note
+new-note $silly

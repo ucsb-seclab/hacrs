@@ -1,0 +1,17 @@
+## Description
+
+A interface for storing files in a tree-like structure.
+
+### Feature List
+
+This service exposes an API for storing files. The API features the following
+fantastic functions.
+
+ * create - Add a file to the tree. Path components are separated by the '/' character
+ * unlink - Remove a file from the tree.
+ * read - Read from a file handle.
+ * lseek - Set the offset for a file handle.
+ * close - Remove a file handle.
+ * open - Create a file handle for the file at a specific path.
+ * write - Write to a file handle.
+

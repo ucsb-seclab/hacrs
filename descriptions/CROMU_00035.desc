@@ -1,0 +1,9 @@
+## Description
+SPIFFS (Somewhat Poorly Implemented Fast File System) is an im memory file system. user is provided a prompt from which users, groups, directories, files, and file permissions can be added, removed, appended, and displayed  
+### Feature List
+Files and directorys have permision attributes for users and groups of users.  
+Directories are hierarchical.
+Files can be uploaded, appended, displayed, and truncated.
+users can be added, removed, added to groups and removed from groups
+groups can be added removed and displayed
+

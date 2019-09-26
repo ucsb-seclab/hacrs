@@ -1,0 +1,8 @@
+## Description
+
+This service implements a flight planner tool where least cost or least duration flights can be found in a database of airports and their connections to other airports.
+
+### Feature List
+Upon its initial start, the service loads airport and connection info from its "database", which in this case is the magic page of data.  After this point, users are allowed to enter new airports and connetions, list all airports or a selected airport, delete airports, and find routes from one endpoint to another.
+
+

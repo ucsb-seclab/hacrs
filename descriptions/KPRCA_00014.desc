@@ -1,0 +1,10 @@
+## Description
+
+This service implements a basic virtual machine that receives one instruction at a time and sends back the VM's current register state.
+
+The protocol starts with a header that has a magic check and fields to allow initialization of the VM's registers and memory. Each instruction is 32-bits and is generally in the format: 8-bit opcode, 4-bit destination register, 4-bit source register, 16-bit literal.
+
+### Feature List
+
+The virtual machine implements basic arithmetic such as addition, subtraction, division, and multiplication, as well as integer comparisons and basic IO. The machine state consists of 15 general purpose registers and 64KB of memory. For performance, the interpreter utilizes computed gotos instead of the more common if statements or switch statement.
+

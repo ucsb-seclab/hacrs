@@ -1,0 +1,30 @@
+## Description
+
+Server similar to FTP.
+
+### Feature List
+
+
+SEND <1 byte name length> <name> <2 bytes file size> <file>
+    Maximum length that can be sent is 0x400
+    This is how a user can send a new file to the server.
+    The name must be the full path
+
+NDIR <1 byte name length> <name>
+    Create a new directory under root
+
+RECV <1 byte name length> <name>
+    Retrieve a file from under root.
+    This must be the full path
+
+STOP
+    Terminate the session
+    
+PRNT 
+    List files and type/length
+    
+REPO <1 byte name length> <name>
+    Removes the file specified by name.
+    Does not remove directories.
+
+

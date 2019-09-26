@@ -1,0 +1,18 @@
+## Description
+
+This is the Tick-A-Tack Game.
+
+This game is quite similar to Tic-Tac-Toe, with a few modifications. First, instead of using X and O for the players, we are using P and Q. And player P always goes first.
+
+To make the game a little more different, the game board is never sent to the player. Only the moves made by the computer are sent to the player. Thus, the player can either keep track of the computer's moves and generate their own board, or the player can simply continue guessing coordinates until the game ends. This will make it more challenging for automated analysis to determine that the protocol is similar to a Tic-Tac-Toe game.
+
+Additionally, the computer always wins a tie, so the onus is on the player to actually try to win their games if they care about the score.
+
+### Feature List
+
+This service is inspired by Tic-Tac-Toe. Players can play a game, select which letter they want to be; which determines who goes first, select to play additional games, start over, or quit playing.
+
+The service provides a menu system to assist players with supported commands.
+
+The moves performed by the computer are determined using a custom pseudo random number generator that walks through the digits of PI. Each request to the PRNG will return subsequent digits of PI. Those digits are used modulo 3 to ensure the computer selects moves that are within a 3x3 grid (the game board).
+

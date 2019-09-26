@@ -1,0 +1,6 @@
+## Description
+
+This service is supposed to be a simple service where a user can login to the service and and then *add*, *delete* and *print* out the list of currently stored passwords. The strange thing about this service is that the passwords must all be 3rd power diophantine equations in the form of secret1^3 + secret2^3 + secret3^3 = stored-secret^3. 
+
+This CB is meant to be a harder version of YAN01_00008, but is also provided to help CRS authors to test their solver integration. What makes this CB more difficult than the other is that, the uint32 numbers are converted into 256bit large ints before addition and multiplication takes place. This and the fact that numbers are entered as ascii decimal numbers and then converted into uint32_t also obfuscates the process.
+

@@ -1,0 +1,20 @@
+## Description
+
+A barcode system
+
+### Feature List
+
+The service allows a user to generate or decode barcodes.
+The options are:
+1. Input a new barcode
+2. View barcode ascii
+3. Generate barcode image
+4. View cached barcodes
+5. Clear cached barcodes
+6. Quit
+
+When inputting a barcode, a user may input as text, bacoded ascii (with '|'and ' ') representing the binary values
+or as a bitmap that digitally represents the barcode.
+
+Once a barcode is cached (up to 10 items can be cached) it can be viewed as either an ascii or bitmap representation.
+

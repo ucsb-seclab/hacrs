@@ -1,0 +1,16 @@
+## Description
+
+OTPSim provides a way to simulate an OTP (One Time Pad) code generation with limited sessions. When a client initiates the session with the handshake command, the client can generate up to 3 OTP codes of customizable length, unless the session is extended. The extension resets the counter back to 0, allowing the client to generate 3 more OTP codes. The service also provides a way to verify.
+
+### Feature List
+
+
+```
+- Handshake
+- Generate OTP token
+- Extend the session
+- Reset seed value and index
+- Verify token
+- Quit
+```
+

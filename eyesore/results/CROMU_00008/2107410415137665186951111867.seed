@@ -1,0 +1,65 @@
+update database
+login
+update database
+firstname == "Bob"
+update database
+1
+update database
+"1"
+update database
+"Bob"
+update database
+5
+update database
+(firstname == "Bob")
+update
+0
+find
+find database
+insert
+Bob
+Will
+insanebob
+02/16/1980 09:09:09
+insert
+Bob
+Will
+insanebob
+02/16/90 09:09:09
+insert
+John
+Hanks
+infohanks
+03/15/81 06:03:09
+find Bob
+find fn == Bob
+find firstname == Bob
+find (firstname == "Bob")
+(firstname == "Bob")
+find (fn == "Bob" and ln == "Will")
+update
+update database
+0
+Bruce
+Park
+insanebru
+06/09/72 09:09:09
+clear
+clear screen
+update database
+1
+
+
+
+
+update database
+1
+
+
+
+03/15/90 06:03:09
+find database
+find John
+find "John"
+find firstname == John
+find (firstname == "John" AND lastname == "Hanks")

@@ -1,0 +1,12 @@
+## Description
+
+Tired of being limited to 160 characters?
+Want to send large, binary messages over current cellular networks?
+LMS (Long Message Service) is our proprietary alteranative to SMS, that allows for longer messages and more efficient transfer of your messages. 
+This is an alpha implementation of a reference client for this excellent new protocol.
+
+### Feature List
+
+LMS supports raw message sizes of 256 bytes, and can use up 2**16 fragments, and supports a number of different base encodings.
+This client will process a series of LMS fragments and decode the message.
+

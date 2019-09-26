@@ -1,0 +1,33 @@
+## Description
+
+SOLFEDGE is state of the art software used by ARRRRGH, the Academy of Really, Really, Really, Really, Great Harmony, to translate their music between notes and syllables (Solmization).
+
+ARRRRGH teaches their classes in French, so SOFEDGE is designed to use the French 'fixed do' method of solfedge and only recognizes the C major scale.
+
+### Feature List
+
+This service is a translation engine, so it has 2 primary functions:
+
+* It accepts large strings of notes and converts them to syllables.
+* It accepts large strings of syllables and converts them to notes.
+
+Valid notes are:
+* C
+* D
+* E
+* F
+* G
+* A
+* B
+
+And valid syllables are:
+* Ut
+* Re
+* Mi
+* Fa
+* Sol
+* La
+* Si
+
+A single harmony can contain up to 2048 syllables or notes.
+

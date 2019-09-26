@@ -1,0 +1,28 @@
+## Description
+
+This service generates charts for numeric data, including horizontal bar charts,
+sparklines, amd also produces random numbers.
+
+### Feature List
+
+* Bar charts, with different scale factors
+* Sparklines using UTF-32 characters
+* Echo back data
+* A seedable PRNG
+
+### State Chart
+
+* Start: decide on quantity and qualities of data
+* Send data: load data after connection
+* Menu: receive a "ready" message, along with the count of data received; choose
+  a function.
+* Sparks: sparkline, send some sparks, get a sparkline chart
+* Bars: bar chart, send some scale factors, get a bar chart
+* Echo: send a character count, receive that many random words
+* Seed: send a 32-bit number, seed the PRNG
+* Noise: dump out a bunch of PRNG state
+* Terminate: disconnect
+
+After the PRNG has been seeded, the state chart loses the ability to predict
+bar chart sizes: this is `tainted` mode.
+

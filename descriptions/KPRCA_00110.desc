@@ -1,0 +1,10 @@
+## Description
+
+A very simple, binary protocol calculator that can do basic binary operations. It provides a way to import the operations and export the results. The results are not computed untill it's told to. The service provides a random base, so that a malicious person cannot figure out the correct value of the computation except for the person who initiated the computation.
+
+### Feature List
+
+- Basic math operations: Add, Sub, Mul, Div, Mod
+- Import and Export
+- Compute
+

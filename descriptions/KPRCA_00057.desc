@@ -1,0 +1,28 @@
+## Description
+Glue is a custom file format meant to be used as an archiving mechanism for
+system administrators who desire to store large collections of files as
+a single file. This service is command line parser for glue files desired to
+allow system administrators to easily examine and validate the contents of
+their glue files.
+
+### Feature List
+
+ * Print the follow attributes about each object contained within the archive
+
+ * Name
+ * Mode
+ * UID
+ * GID
+ * User Code
+ * Size
+ * Modification Time
+ * Type
+ * Link Name
+ * Magic Value
+ * Version
+ * Owner Name
+ * Group Name
+ * Device Major Number
+ * Device Minor Number
+ * Prefix
+

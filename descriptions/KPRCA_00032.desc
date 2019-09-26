@@ -1,0 +1,8 @@
+## Description
+
+This service implements an anagram game and solver with a simple binary interface. At launch, the service is sent an initial dictionary that is used to sort the anatree. THe user can then add more words, remove words, query for anagrams, or play a game.
+
+### Feature List
+
+The anagram solver can answer queries for normal anagrams and subset anagrams. The solver is built using an anatree where each level of the tree represents a letter of the alphabet and the edges represent number of occurences of that letter. While this is slower than the alternative hash-based algorithm, it can support subset anagrams without explosion of runtime. The game will send the user ten words and the user must respond with half of the possible anagrams for each word in order to win.
+

@@ -1,0 +1,23 @@
+## Description
+
+This service implements an optical character recognition engine. It takes in
+simple drawings of letters and tries to determine what the drawing says. It
+either returns to the user a successful result or an error message.
+
+### Feature List
+
+The OCR engine accepts only a predefined format for the images which it will
+process. This format has a special header on the first line, the dimensions of
+the image on the next line and the data comprising the image on the remaining
+lines of the input file. The image data is an array of bytes. The OCR engine
+walks over the image data attempting to match a subsection of the image data
+against predefined character templates. The matching algorithm allows for some
+fuzziness. If a character template is successfully matched against that
+character is copied to a result buffer and the window is shifted past the
+character. If no character is successfully matched against for the current
+window then the window is simply shifted over one column and the matching
+process begins again. When the window hits the end of the array the matching
+process is finished. The concatenation of all successful matches are returned
+to the user. If no successful matches occurred then an error message is
+returned to the user.
+

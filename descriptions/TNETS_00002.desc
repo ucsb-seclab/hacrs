@@ -1,0 +1,9 @@
+## Description
+Virtual pet ownership.
+
+### Feature List
+
+This services allows the user to create virtual pets and have them
+perform a few rudimentary tricks.  When a pet becomes too annoying,
+it can be deleted.
+

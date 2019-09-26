@@ -1,0 +1,13 @@
+new-note 8***
+new-note ^23423 ^£$%$@%££)(
+new-note(a) 
+new(note(x,y) 
+new-note(x,y) $My_name
+get-note $My_name
+new-note(a)
+new-note(a) BUM
+get-note(a)
+get-note BUM
+append-note * (apof)
+delete-note YOULLNEVERFINDTHIS
+get-note ORTHIS

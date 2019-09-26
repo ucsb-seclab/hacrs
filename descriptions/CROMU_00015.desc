@@ -1,0 +1,76 @@
+## Description
+
+A user is able to submit a Planet Markup Language (PML). This will be parsed and presented to the user via menu driven options that allow the elements to be modified.
+
+This CB was designed to push the limits of the CRS' capability to handle the state space explosion problem. While this is not as complex as someting such as a browser or media player, it is large enough to serve as a milestone for CRS'. While the state space is large, the two vulnerabilities are straight forward. 
+
+### Feature List
+
+PML Format:
+
+Generic format:
+
+Each element opens with {ElementId} and closes with {#ElementId}.
+No element will have itself as a sub element.
+
+Top level Planet element:
+        {Planet}        -- This is the top level id indicating a new planet descriptor
+                {Name}  AlphaNumeric  {#Name}           -- Indicate the name of the planet
+                {Period} Float {#Period}                -- Orbital period in days
+                {OrbitSpeed} Float {#OrbitSpeed}        -- Average orbital speed in km/s
+                {Aphelion} Float {#Aphelion}            -- Aphelion in km
+                {Perihelion} Float {#Perihelion}        -- Perihelion in km
+                {Radius} Float {#Radius}                -- Mean radius in km
+                {ERadius} Float {#ERadius}              -- Equatorial radius in km
+                {Mass} Float {#Mass}                    -- Mass in kg
+                {Gravity} Float {#Gravity}              -- Surface gravity in m/s
+                {Population} Integer {#Population}      -- Global population as a positive integer
+                {Country} Country Format {#Country}     -- Country sub information. For full description see the
+                                                                Country subelement formatting. Multiple country
+								Subelements are allowed
+        {#Planet}
+
+Country Element:
+        {Country}
+                {Name} AlphaNumeric {#Name}             -- Name of the country
+                {Capitol} Alphabetic {#Captiol}         -- Capitol City
+                {Population} Integer {#Population}      -- Country population as an integer
+                {Language} Alphabetic {#Language}       -- Language spoken within the country. Multiple
+								languages can be specified.
+                {Border} Lat Long start/end {#Border}   -- This indicates the start/end via latitude/longitude
+                                                                pair of coordinates. It is necessary to use multiple
+                                                                Border elements to construct a complete border. [*]
+                                                                Ex. {Border} 45.012 34.123 080.123 20.000 {#Border}
+                {Territory} Territory Format {#Territory} -- Used to define territories within a country
+        {#Country}
+
+Territory Element:
+        {Territory}
+                {Name} AlphaNumeric {#Name}
+                {Population} Integer {#Population}
+                {Established} Integer {#Established}    -- Year the county was established. Can be negavive
+                {Founder} AlphaNum+Spaces {#Founder}    -- Founder of the territory
+                {Border} Lat Long start/end {#Border}
+                {County} County Format {#County}        -- County within a territory
+        {#Territory}
+
+County Element:
+        {County}
+                {Name} AlphaNumeric {#Name}
+                {Population} Integer{#Population}
+                {Border} Lat Long start/end {#Border}
+                {Seat} Alpha {#Seat}	                -- County seat
+                {Area} Float {#Area}                    -- Total area in square kilometers
+                {Density} Float {#Density}              -- Population density in people per km^2
+                {City} City Format {#City}              -- City within a county
+        {#County}
+
+City Element:
+        {City}
+                {Name} Alphanumeric {#Name}
+                {Mayor} AlphaNum+Spaces {#Mayor}	-- Mayor of the city
+                {Url} City Website {#Url}		-- City website
+                {Population} Integer {#Population}
+                {Border} Lat Long start/end {#Border}
+        {#City}
+

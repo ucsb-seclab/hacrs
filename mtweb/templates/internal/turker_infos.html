@@ -1,0 +1,27 @@
+<html xmlns="http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2006-07-14/ExternalQuestion.xsd">
+    <head>
+        {{{ header }}}
+    </head>
+    <body>
+    {{{ internal_links }}}
+
+    <script src="/static/internal/showturks.js"></script>
+
+	<table id = "turkinfos-table" class="table table-striped table-bordered" cellspacing="0" width="100%">
+		<thead>
+		<tr>
+			<th>Tasklet</th>
+			<th>Hit ID</th>
+			<th>Hit GID</th>
+			<th>Amount</th>
+			<th>Type</th>
+		</tr>
+		</thead>
+	</table>
+
+    <script>
+        var turkinfos = JSON.parse(unescape("{{turkinfos}}"));
+    </script>
+    </body>
+</html>
+

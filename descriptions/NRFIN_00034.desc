@@ -1,0 +1,21 @@
+## Description
+
+This is a shell for administering files on a remote file store. The remote file
+system supports multiple users and enforces permissions on files and folders in
+the store. There is support for system administrators to schedule periodic jobs
+in between IO operations. The filesystem supports reading, writing and deleting
+files, along with creating links to other files.
+
+Commands take the form of a 4-byte command identifier, followed by optional
+arguments. Commands may produce output, but will always end in a 4-byte success
+code, 0 on success or -1 on failure.
+
+### Feature List
+
+The following features are available:
+ - Change directory, accepts a name of a directory to move to
+ - Read file, accepts a filename and returns the contents of that file
+ - Write file, accepts a filename and a size, writes the contents to a file
+ - Link files, creates a new file which is a link to another file
+ - Remove file, deletes a file from the store
+

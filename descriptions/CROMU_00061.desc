@@ -1,0 +1,8 @@
+## Description
+
+This service is a simple implementation of a virtual system simulator. It includes a simple flat model Memory Management Unit (MMU), Central Processing Unit (CPU) and Direct Memory Access (DMA) controller. The CPU is simple 16-bit processor with 16 general purpose registers, registers 0-15, with 15 being permanently dedicated as the Program Counter (PC). DMA devices include two peripherals a read and write peripheral for sending data via transmit/receive.
+
+### Feature List
+
+This service features 3 central components. A CPU, MMU, and DMA controller. In addition a simple CLF (Cromu Loader File) loader is implemented for loading the virtual subsystem. Upon initial connection to the service it expects a 4-byte 32-bit value indicating the file size of the incoming CLF file. The file is then loaded into memory by parsing the load sections in the file and loading them into the MMU controller. Simple page protections is supported including READ/WRITE/EXECUTE page protections. The DMA controller supports two peripheral devices a CReadDevice and CSendDevice, one for sending data out over STDOUT and for reading data over STDIN. The DMA controller is setup using two registers, one for specifying the address for the DMA access and the next register for the DMA length. Basic CPU arithmetic supported includes: Addition, Subtraction, Multiplication and Division. Also supported is GetRand and GetSeedMaterial instructions that read data from a random number generator and GetSeedMaterial that partially uses magic page data.
+

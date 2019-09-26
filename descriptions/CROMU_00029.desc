@@ -1,0 +1,14 @@
+## Description
+
+This challenge binary implements a material temperature simulation.  It calculates temperature changes in a given material over time.  
+
+### Feature List
+
+The CB supports three pre-defined materials (air, aluminum, and copper) as well as a custom-defined material which requires the user to provide thermal conductivities and heat capacities of the target material over a range of temperatures.  
+
+Once the size of the material is defined, the user is given the opportunity to define the temperature of each cubic meter of material, or to make the material isothermic.  If desired, the user may also define constant heat sources in each cubic meter of the material.  If defined, those cells remain at the constant temperature specified by the user while other surrounding cells are affected according to the characteristics of the material.
+
+Once the simulation starts, the program outputs the temperatures for the material at each time step.  The time step is automatically calculated to make sure the simulation remains stable given the input parameters.  
+
+The program assumes that the boundary of the material is perfectly insulated.  No heat is lost or gained at the material boundary.
+

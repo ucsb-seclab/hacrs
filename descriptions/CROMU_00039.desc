@@ -1,0 +1,8 @@
+## Description
+
+This CB implements a basic service for setting and querying named variables.  It allows for string and 32-bit integer variables to be created, updated and queried by the client.  Communications between the client and service is accomplished over a custom network protocol that defines packet formats for read, write, response, and error types.
+
+### Feature List
+
+The service allows for the creation, update, and querying of named variables.  Names can be things like "system.name".  The contents of these variables can be strings or 32-bit integer values.
+

@@ -1,0 +1,49 @@
+[B
+[B[B[B
+[A[A[A[A[A
+[A
+[A
+[C
+[C[C[C
+[D[D[D
+[B[B[B[B
+[B[B[B
+[D
+[C
+[D[B[D[D
+[B[D
+[B[B[B
+[B[A[A
+[B[D[D
+[D[D[D[B
+create new user
+create new user
+new
+user
+Create
+Create New
+Use
+Password
+Deleted User
+Delete User
+D
+1
+2
+/Delete
+D
+delete
+File
+UID
+PPID
+SHELL
+USED PWD
+[ian@
+USER=NEW
+Host
+-n
+-v
+uname -a
+!!
+!#
+[C
+/usr/bin/bash

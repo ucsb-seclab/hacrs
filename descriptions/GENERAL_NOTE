@@ -1,0 +1,45 @@
+##
+## General Hints
+##
+
+Some programs are very complex to interact with. To try to help you out, we've
+compiled together a list of common tricks to trigger functions in programs:
+
+- Some programs don't interact using English, but receive, as an input, single
+  letters and numbers, triggering different functions for them.
+- Some programs are *case sensitive*. That is, they treat uppercase letters and
+  lowercase letters differently. If a program is not behaving as expected, try
+  provide a different case for the letters.
+
+In general, if the number of triggered functions is increasing, you are on the
+right track!
+
+To help you with understanding how to interact with these programs, we have
+provided several "sample interactions" below. Please skim over them; it'll help
+you understand the programs, and also understand what functions have already
+been triggered. If a function has already been triggered in a different
+interaction, it *will not* count toward your payout. 
+
+There are multiple interactions below. You can click on the link corresponding
+to its number, then skim it. User input into the program is displayed in black
+font, and output in red font. When an input character seen in the interaction
+can be changed to change the program's behavior, it will be highlighted in
+different colors depending on how these changes can occur. Hovering your mouse
+over these highlights will display a table describing what the character can be
+replaced with to trigger different functions in the program. For example, if a
+character "F" is highlighted, and hovering over it displays "<'F'" as a possible
+alternative, then you might be able to enter "A", "B", "C", "D", and "E" to
+trigger different functions.
+
+For the purpose of the less than ("<") and greater than (">") alternatives,
+please use the following ranking (from least to greatest) of the letters:
+
+ENTER TAB SPACEBAR ! " # $ % & ' ( ) * + , - . / 0 1 2 3 4 5 6 7 8 9 : ; < = > ? @ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z [ \ ] ^ _ ` a b c d e f g h i j k l m n o p q r s t u v w x y z { | } ~
+
+After you have familiarized yourself with the sample interactions,
+you can collapse the existing interactions, click on the bar above the black
+textbox to enable it, and begin interacting with the software. Alternatively,
+if you want replay a prior transition, simply click on an input character,
+and everything until that character will be replayed in the session!
+
+Good luck!

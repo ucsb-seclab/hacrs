@@ -1,0 +1,20 @@
+1986
+7
+3
+20
+32
+43
+./
+ls
+help
+set
+get
+add
+add 1
+cd
+cd ..
+ls
+cat
+cat 1
+delete
+exit

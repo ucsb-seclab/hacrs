@@ -1,0 +1,8 @@
+## Description
+
+This is a software re-implementation of Thermal controller software and simulation, a heating element controller such as would be used in commercial oven, BBQ smoker, or other industrial control device.
+
+### Feature List
+
+The thermal controller is much more capable than the typical controller found in consumer level appliances such as stoves.  Although it does contain static modes such a maintaining a set temperature, it also supports up to 10 temperature sensors, a smoke sensor, and a 10 step programmable thermal profile.  The different program steps can be based on temperature triggers from any of the configured temperature probes, or can dwell at a fixed temperature for a programmed length of time.  An ideal use of this controller would be in a competition BBQ smoker where different kinds of meat require finely tuned adjustments to temperature during the smoking process to result in proper breakdown of connective tissue, maintenance of moinsture, and control of the smoke generation.  The controller was designed to be remotely operated using a separate "app" on a mobile device, and implements a binary protocol for this purprose.  The controller was designed to be robust and rigorously checks that remote commands correctly configure the device. 
+

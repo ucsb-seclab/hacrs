@@ -1,0 +1,11 @@
+## Description
+
+This service reads in a morse code like language in the form of a PCM-encoded file,
+decodes the data, and prints out the message.
+
+### Feature List
+
+This program supports the decoding of a PCM-based audio file format.  It expects a
+sample rate of 44100 samples/sec with 16-bit samples.  It decodes the audio data
+as a morse code like language, printing the decoded message as its output.
+

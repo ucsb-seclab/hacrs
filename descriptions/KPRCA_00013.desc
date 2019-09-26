@@ -1,0 +1,59 @@
+## Description
+
+Accel is a spreadsheet program that enables a user to store information in a table and calculate numerical formulas based on cell data. Similar to other familiar spreadsheet programs, Accel is meant to assist in organizing large amounts of data that have interdependencies. The functions provided will enable a user to complete most simple financial and arithmetic needs.
+
+### Feature List
+
+Command Line Operations:
+-------------------------
+**Literal Assignment
+A0=1
+A0=This is a string
+
+**Formula Assignment
+A1==SQRT(9)
+A2==A1+97
+A3==SIN(A2/A1)
+
+Supported String Commands:
+----------------------
+CLEAR - Clears a cell
+Accel:-$ CLEAR A3
+
+REPR - Show the representation of a cell (helpful with formulas)
+Accel:-$ REPR A2 --> =A1+97
+
+SHOW - Show the value of a cell, either literal or computer
+Accel:-S SHOW A2 --> 100
+Accel:-S SHOW A0 --> This is a string
+
+SHOW TABLE - Shows the contents of the entire table
+Accel:-S SHOW TABLE
+
+EXIT - Exits the program
+Accel:-S EXIT
+
+Supported Functions:
+------------------------------------------------
+AVG     - Calculate the average of a list
+COUNT   - Count the number of items in a list
+MAX     - Return the largest value in a list
+MEDIAN  - Calculate the median of a list
+MIN     - Return the smallest value in a list
+STDDEV  - Calculate the standard deviation of a list
+ABS     - Return the absolute value of a number
+COS     - Calculate the cosine function of a number
+LN      - Caclualte the natural log of a number
+LOG10   - Calculate a log base 10 of a number
+POWER   - Raise a number to a power
+SIN     - Calculate the sine function of a number
+SQRT    - Take the square root of a number
+SUM     - Return the summation of a list
+
+Supported Operators
+------------------------------------------------
++   - Addition
+*   - Multiplication
+/   - Division
+-   - Subtraction
+
